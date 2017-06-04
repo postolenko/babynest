@@ -281,7 +281,7 @@ a:active {
 
 .header .col {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: bottom;
 }
 
 .header .col-1 {
