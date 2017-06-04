@@ -575,15 +575,19 @@ a:active {
 }
 
 .shape-sect-box img {
-    /*display: block;*/
-    display: none;
+    display: block;
+    /*display: none;*/
     /*min-width: 100%;*/
     width: 109%;
     /*min-height: 389px;*/
     height: auto;
+    opacity: .1;
     position: absolute;
     top: 0;
     left: -9%;
+}
+
+.shape-sect-box img.horizontal_moving {
     -webkit-animation: horizontal_float 18s infinite;
     -moz-animation:    horizontal_float 18s infinite;
     -o-animation:      horizontal_float 18s infinite;

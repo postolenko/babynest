@@ -28,7 +28,9 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".shape-sect-box img").delay(1000).fadeIn(700);
+        $(".shape-sect-box img").animate({"opacity" : 1 }, 1000, function() {
+            $(this).addClass("horizontal_moving");
+        });
 
     });
 
