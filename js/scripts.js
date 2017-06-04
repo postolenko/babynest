@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".shape-sect-box img").animate({"opacity" : 1 }, 600);
+        $(".shape-sect-box").animate({"opacity" : 1 }, 600);
 
         setTimeout(function() {
 
