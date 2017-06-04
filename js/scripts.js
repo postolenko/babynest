@@ -26,12 +26,11 @@ $(document).ready(function() {
     });
 
 
-    setTimeout(function() {
+    $(function() {
 
-        $(".shape-sect-box").fadeIn(300);
+        $(".shape-sect-box").delay(1000).fadeIn(300);
 
-    }, 1000);
-
+    });
 
     function getPromoFloatBlockSize() {
 
