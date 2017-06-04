@@ -28,9 +28,13 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".shape-sect-box img").animate({"opacity" : 1 }, 1000, function() {
-            $(this).addClass("horizontal_moving");
-        });
+        $(".shape-sect-box img").animate({"opacity" : 1 }, 600);
+
+        setTimeout(function() {
+
+            $(".shape-sect-box img").addClass("horizontal_moving");
+
+        }, 1000);
 
     });
 
