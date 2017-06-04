@@ -312,72 +312,12 @@ a:active {
     max-width: 170px;
     position: relative;
     top: 3px;
-    -webkit-animation: float_logo 4s infinite;
-    -moz-animation:    float_logo 4s infinite;
-    -o-animation:      float_logo 4s infinite;
-    animation:         float_logo 4s infinite;
 }
 
 .logo-box .logo img {
     display: block;
     width: 100%;
     height: auto;
-}
-
-@keyframes float_logo {
-    0% {
-        top: -6px;
-    }
-
-    50% {
-        top: 12px;
-    }
-
-    100% {
-        top: -6px;
-    }
-}
-
-@-webkit-keyframes float_logo {
-    0% {
-        top: -6px;
-    }
-
-    50% {
-        top: 12px;
-    }
-
-    100% {
-        top: -6px;
-    }
-}
-
-@-moz-keyframes float_logo {
-    0% {
-        top: -6px;
-    }
-
-    50% {
-        top: 12px;
-    }
-
-    100% {
-        top: -6px;
-    }
-}
-
-@-o-keyframes float_logo {
-    0% {
-        top: -6px;
-    }
-
-    50% {
-        top: 12px;
-    }
-
-    100% {
-        top: -6px;
-    }
 }
 
 .main-nav {
@@ -631,51 +571,6 @@ a:active {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 1;
-    -webkit-animation: fade_float_block 3s ease-in;
-    -moz-animation:    fade_float_block 3s ease-in;
-    -o-animation:      fade_float_block 3s ease-in;
-    animation:         fade_float_block 3s ease-in;
-}
-
-@keyframes fade_float_block {
-    0% {
-        opacity: .1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fade_float_block {
-    0% {
-        opacity: .1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fade_float_block {
-    0% {
-        opacity: .1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fade_float_block {
-    0% {
-        opacity: .1;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 .shape-sect-box img {
