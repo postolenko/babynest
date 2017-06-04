@@ -564,8 +564,8 @@ a:active {
 }
 
 .shape-sect-box {
-    /*display: block;*/
-    display: none;
+    display: block;
+    /*display: none;*/
     height: 415px;
     width: 100%;
     overflow: hidden;
@@ -575,7 +575,8 @@ a:active {
 }
 
 .shape-sect-box img {
-    display: block;
+    /*display: block;*/
+    display: none;
     /*min-width: 100%;*/
     width: 109%;
     /*min-height: 389px;*/

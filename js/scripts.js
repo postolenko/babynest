@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     $(function() {
 
-        $(".shape-sect-box").delay(1000).fadeIn(300);
+        $(".shape-sect-box img").delay(1000).fadeIn(700);
 
     });
 
