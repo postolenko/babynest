@@ -26,6 +26,13 @@ $(document).ready(function() {
     });
 
 
+    setTimeout(function() {
+
+        $(".shape-sect-box").fadeIn(300);
+
+    }, 1000);
+
+
     function getPromoFloatBlockSize() {
 
         $(".shape-sect-box").css({

@@ -564,7 +564,8 @@ a:active {
 }
 
 .shape-sect-box {
-    display: block;
+    /*display: block;*/
+    display: none;
     height: 415px;
     width: 100%;
     overflow: hidden;
