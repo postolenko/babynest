@@ -578,9 +578,7 @@ a:active {
 .shape-sect-box img {
     display: block;
     /*display: none;*/
-    /*min-width: 100%;*/
     width: 109%;
-    /*min-height: 389px;*/
     height: auto;
     position: absolute;
     top: 0;
