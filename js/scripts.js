@@ -1,10 +1,16 @@
 $(document).ready(function() {
 
+    var setFooterPositionInterval;
+    var contentCoor;
+    var footerCoor;
+
+    // ----------------------
 
     getPromoFloatBlockSize();
 
-    $(window).resize(function() {
+    getFooterPosition();
 
+    $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
@@ -17,20 +23,7 @@ $(document).ready(function() {
     });
 
 
-    $(function() {
-
-        $(".wrapper").css({"min-height" : $(window).height() + "px"});
-
-        $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
-
-    });
-
-
-    $(function() {
-
-        // $(".shape-sect-box").animate({"opacity" : "1" }, 600);
-
-        // $(".shape-sect-box").fadeIn(600);
+    $(function() {        
 
         setTimeout(function() {
 
@@ -40,6 +33,43 @@ $(document).ready(function() {
 
     });
 
+    // $(function() {
+
+    //     $(".mosaik-thumbnails .thumbnail").each(function() {
+
+    //         console.log("sdsd");
+
+    //         $(this).css({ "height" : $(this).height() + "px"});
+
+    //     });
+
+    // });
+
+    function getFooterPosition() {
+
+        $(".wrapper").css({"min-height" : $(window).height() + "px"});
+
+        $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+        setFooterPositionInterval = setInterval(function() {
+
+            contentCoor = $(".content").offset().top + $(".content").height();
+            footerCoor = $(".footer").offset().top;
+
+            if( contentCoor != footerCoor ) {
+
+                $(".wrapper").css({"min-height" : $(window).height() + "px"});
+
+                $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
+
+                clearInterval(setFooterPositionInterval);
+
+            }
+
+        }, 35);
+
+    }
+
     function getPromoFloatBlockSize() {
 
         $(".shape-sect-box").css({
@@ -47,7 +77,5 @@ $(document).ready(function() {
         });
 
     }
-
-
 
 });
