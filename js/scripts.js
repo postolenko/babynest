@@ -10,6 +10,8 @@ $(document).ready(function() {
 
     getFooterPosition();
 
+    getBootomPaddingForUseDescripts();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -19,6 +21,8 @@ $(document).ready(function() {
         // ---------------------------------
 
         getPromoFloatBlockSize();
+
+        getBootomPaddingForUseDescripts();
 
     });
 
@@ -44,6 +48,50 @@ $(document).ready(function() {
     //     });
 
     // });
+
+    $(function() {
+
+        $(".use-descripts li .icon-box").bind({
+
+            mouseenter : function() {
+
+                $(this).prev(".tooltip").addClass("visibility");
+
+                $(this).prev(".tooltip").css({
+                    "left" : -1 * $(this).prev(".tooltip").width() / 2 + $(this).width() / 2 + "px"
+                });
+
+            }, mouseleave: function() {
+
+                $(this).prev(".tooltip").removeClass("visibility");
+
+            }
+
+        });
+
+    });
+
+    $(function() {
+
+        $(".video-box iframe").each(function() {
+
+            $(this).attr("src", $(this).attr("src") + "?autoplay=0&controls=0&rel=0&showinfo=0");
+
+        });
+
+    });
+
+    function getBootomPaddingForUseDescripts() {
+
+        if( $(".two-cols-box > .col-2 .use-descripts").length > 0 ) {
+
+            $(".two-cols-box > .col-2").css({
+                "padding-bottom" : $(".two-cols-box .col-2 .use-descripts").height() + "px"
+            });
+            
+        }
+
+    }
 
     function getFooterPosition() {
 

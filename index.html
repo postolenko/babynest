@@ -260,11 +260,11 @@
 
 			<!-- Section 4 Main Page -->
 
-				<section class="testimonials-sect">
+				<section class="feedback-sect">
 
 					<div class="row">
 
-						<div class="thumbnails testimonials-thumbnails offset-ziro">
+						<!-- <div class="thumbnails testimonials-thumbnails offset-ziro">
 
 							<div class="thumbnail">
 
@@ -373,6 +373,39 @@
 
 								</div>
 
+							</div>
+
+						</div>
+ -->
+
+ 						<div class="feedback_slider-block">
+
+							<div class="feedback_slider feedback_slider_1">
+
+								<div class="slide">									
+									<img src="img/feedback_slider/image_01.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_02.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_03.jpg" alt="" />
+								</div>
+
+								<div class="slide">									
+									<img src="img/feedback_slider/image_01.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_02.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_03.jpg" alt="" />
+								</div>
+								
 							</div>
 
 						</div>
@@ -522,6 +555,15 @@
 		            slideShadows : true
 		        }
 			  });
+
+			 $(".feedback_slider_1").not('.slick-initialized').slick({
+				dots: true,
+				arrows: false,
+				speed: 700,
+				slidesToShow: 3,
+				autoplay: true,
+				autoplaySpeed: 3000
+			});
 
 		</script>
 	

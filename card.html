@@ -15,9 +15,11 @@
 	<link rel="stylesheet" href="vendors/css/swiper.css">	
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">	
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" href="vendors/css/select2.css" >
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/swiper.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
+	<script src="vendors/js/select2.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
@@ -90,7 +92,7 @@
 
 			<!-- Section 1 Good Page -->
 
-				<section>
+				<section class="card-block-sect">
 
 					<div class="row">
 						
@@ -105,105 +107,122 @@
 
 						<!-- /Breadcrumbs -->
 
-						<div class="card-block offset-ziro">
+						<div class="good-card">
 
-							<div class="col col-1">
+							<div class="card-block">
 
-								<h1>Гнездышко 8</h1>
+								<div class="inner offset-ziro">
 
-								<p>Отличное гнездышко в которое можно закутать малыша и уйти себе по каким то делам</p>
+									<div class="col col-1">
 
-								<div class="card-form">
+										<h1>Гнездышко 8</h1>
 
-									<form>
+										<p>Отличное гнездышко в которое можно закутать малыша и уйти себе по каким то делам</p>
 
-										<div class="choise-blcok">
+										<div class="card-form">
 
-											<h4>Цвета:</h4>
+											<form>
 
-											<div class="radio-box">
-												<input type="radio" name="choise_color" id="color_1">
-												<label for="color_1">
-													<img src="img/choise_color/color_01.png" alt="">
-												</label>
+												<div class="choise-box z-2">
+
+													<h4>Цвета:</h4>
+
+													<div class="radio-box">
+														<input type="radio" name="choise_color" id="color_1" checked>
+														<label for="color_1">
+															<img src="img/choise_color/color_01.png" alt="">
+														</label>
+													</div>
+
+													<div class="radio-box">
+														<input type="radio" name="choise_color" id="color_2">
+														<label for="color_2">
+															<img src="img/choise_color/color_02.png" alt="">
+														</label>
+													</div>
+
+													<div class="radio-box">
+														<input type="radio" name="choise_color" id="color_3">
+														<label for="color_3">
+															<img src="img/choise_color/color_03.png" alt="">
+														</label>
+													</div>
+
+												</div>
+
+												<div class="choise-box z-2">
+
+													<h4>Размеры</h4>
+
+													<select>
+														<option>Большой 65 х 45 см.</option>
+														<option>Большой_2 65 х 45 см.</option>
+														<option>Большой_3 65 х 45 см.</option>
+														<option>Большой_4 65 х 45 см.</option>
+													</select>
+
+												</div>
+
+												<div class="price-box">
+													<p class="price">12 750.-</p>
+												</div>
+
+												<div class="card-btns z-2">
+													<a href="#" class="transparent-pill">Купить в 1 клик</a>
+													<a href="#" class="white-pill"><span>В корзину <i class="bascket_small-icon"></i></span></a>
+												</div>
+
+											</form>
+
+										</div>
+
+									</div>
+
+									<div class="col col-2">
+											
+										<div class="good-slider-box">
+
+											<div class="good-slider">
+												<div class="slide">
+													<img src="img/good_slider/photo_01.png" alt="">
+												</div>
+												<div class="slide">
+													<img src="img/good_slider/photo_01.png" alt="">
+												</div>
+												<div class="slide">
+													<img src="img/good_slider/photo_01.png" alt="">
+												</div>
 											</div>
 
-											<div class="radio-box">
-												<input type="radio" name="choise_color" id="color_2">
-												<label for="color_2">
-													<img src="img/choise_color/color_02.png" alt="">
-												</label>
-											</div>
-
-											<div class="radio-box">
-												<input type="radio" name="choise_color" id="color_3">
-												<label for="color_3">
-													<img src="img/choise_color/color_03.png" alt="">
-												</label>
-											</div>
+											<div class="good-slider-pagination"></div>
 
 										</div>
 
-										<div>
-
-											<h4>Размеры</h4>
-
-											<select>
-												<option>Большой 65 х 45 см.</option>
-												<option>Большой_2 65 х 45 см.</option>
-												<option>Большой_3 65 х 45 см.</option>
-												<option>Большой_4 65 х 45 см.</option>
-											</select>
-
-										</div>
-
-										<div class="good-card price-box">
-											<p class="price">12 750.-</p>
-										</div>
-
-										<div class="card-btns">
-											<a href="" class="transparent-pill">Купить в 1 клик</a>
-											<a href="" class="white-pill"><span>В корзину <i class="bascket_small-icon"></i></span></a>
-										</div>
-
-									</form>
-
-								</div>
-
-							</div>
-
-							<div class="col col-2">
-									
-								<div class="good-slider-box">
-									<div class="good-slider">
-										<div class="slide">
-											<img src="img/good_slider/photo_01.png" alt="">
-										</div>	
 									</div>
 
 								</div>
 
 							</div>
 
-						</div>
+							<div class="card-promo-slider-box">
+							
+								<div class="card-promo-slider cart-slider">
+									<div class="slide">
+										<img src="img/main_slider/slide_01.jpg" alt="" >
+									</div>
+									<div class="slide">
+										<img src="img/main_slider/slide_02.jpg" alt="" >
+									</div>
+									<div class="slide">
+										<img src="img/main_slider/slide_03.jpg" alt="" >
+									</div>
+								</div>
 
-						<div class="blog-slider-box cart-slider-box">
-						
-							<div class="blog-slider cart-slider">
-								<div class="slide">
-									<img src="img/main_slider/slide_01.jpg" alt="" >
-								</div>
-								<div class="slide">
-									<img src="img/main_slider/slide_02.jpg" alt="" >
-								</div>
-								<div class="slide">
-									<img src="img/main_slider/slide_03.jpg" alt="" >
-								</div>
+								<div class="card-promo-pagination"></div>
+
 							</div>
 
-							<div class="cart-slider-pagination"></div>
-
-						</div>				
+						</div>
 
 					</div>
 
@@ -213,15 +232,15 @@
 
 			<!-- Section 2 Good Page -->
 
-				<section>
+				<section class="bottom-shadow">
 
 					<div class="row">
 
-						<h3>Описание</h3>
+						<h2>Описание</h2>
 
-						<div class="two-cols-box clearfix">
+						<div class="two-cols-box">
 
-							<div class="col col-1 left">
+							<div class="col col-1">
 
 								<p>Мы вложили всю душу в создание и совершенство уникального, нежного натурального продукта, отвечающего за безопасность Вашего малыша.</p>
 
@@ -240,7 +259,7 @@
 
 							</div>
 
-							<div class="col col-1 right">
+							<div class="col col-2">
 								
 								<div>
 
@@ -311,31 +330,31 @@
 									<li>
 										<p class="tooltip">Описание 1</p>
 										<p class="icon-box">
-											<img src="img/descript_icons/icon_01.png" alt="" >
+											<img src="img/use_descripts/icon_01.png" alt="" >
 										</p>
 									</li>
 									<li>
 										<p class="tooltip">Гладить запрещено</p>
 										<p class="icon-box">
-											<img src="img/descript_icons/icon_02.png" alt="" >
+											<img src="img/use_descripts/icon_02.png" alt="" >
 										</p>
 									</li>
 									<li>
-										<p class="tooltip">Описание 1</p>
+										<p class="tooltip">Описание 3</p>
 										<p class="icon-box">
-											<img src="img/descript_icons/icon_03.png" alt="" >
+											<img src="img/use_descripts/icon_03.png" alt="" >
 										</p>
 									</li>
 									<li>
-										<p class="tooltip">Описание 1</p>
+										<p class="tooltip">Описание 4</p>
 										<p class="icon-box">
-											<img src="img/descript_icons/icon_04.png" alt="" >
+											<img src="img/use_descripts/icon_04.png" alt="" >
 										</p>
 									</li>
 									<li>
-										<p class="tooltip">Описание 1</p>
+										<p class="tooltip">Описание 5</p>
 										<p class="icon-box">
-											<img src="img/descript_icons/icon_05.png" alt="" >
+											<img src="img/use_descripts/icon_05.png" alt="" >
 										</p>
 									</li>
 								</ul>
@@ -351,11 +370,11 @@
 
 			<!-- Section 3 Good Page -->
 
-				<section>
+				<section class="video-sect">
 
 					<div class="row">
 
-						<h3>Видеообзор</h3>
+						<h2>Видеообзор</h2>
 
 						<div class="video-box">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/7WFXesxq7xs" frameborder="0" allowfullscreen></iframe>
@@ -366,6 +385,171 @@
 				</section>
 
 			<!-- /Section 3 Good Page -->
+
+			<!-- Section 4 Good Page -->
+
+				<section class="feedback-sect">
+
+					<div class="row">
+
+						<div class="feedback_slider-block">
+
+							<div class="feedback_slider feedback_slider_2">
+
+								<div class="slide">									
+									<img src="img/feedback_slider/image_01.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_02.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_03.jpg" alt="" />
+								</div>
+
+								<div class="slide">									
+									<img src="img/feedback_slider/image_01.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_02.jpg" alt="" />
+								</div>
+
+								<div class="slide">
+									<img src="img/feedback_slider/image_03.jpg" alt="" />
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			<!-- /Section 4 Good Page -->
+
+			<!-- Section 5 Good Page  -->
+
+				<section class="look-more">
+
+					<div class="row">
+
+						<h2>Смотрите также</h2>
+
+						<div class="thumbnails goods-thumbnails offset-ziro">
+
+							<div class="good-thumbnail">
+								<a href="#" class="inner">
+									<p class="p-1">Гнездышко 3</p>
+									<div class="img-box">
+										<img src="img/cards_photos/photo_01.jpg" alt="" />
+									</div>
+									<p>Великолепное описание краткое этого товара которое восхищяет и заставляет купить</p>
+									<p class="price">250.-</p>
+								</a>
+							</div>
+
+							<div class="good-thumbnail">
+								<a href="#" class="inner">
+									<p class="p-1">Прелестное что</p>
+									<div class="img-box">
+										<img src="img/cards_photos/photo_02.jpg" alt="" />
+									</div>
+									<p>Великолепное описание краткое этого товара которое восхищяет и заставляет купить</p>
+									<p class="price">6 050.-</p>
+								</a>
+							</div>
+
+							<div class="good-thumbnail">
+								<a href="#" class="inner">
+									<p class="p-1">Поспи ка 4</p>
+									<div class="img-box">
+										<img src="img/cards_photos/photo_03.jpg" alt="" />
+									</div>
+									<p>Великолепное описание краткое этого товара которое восхищяет и заставляет купить</p>
+									<p class="price">12 75.-</p>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			<!-- Section 5 Good Page  -->
+
+			<!-- Section 5 Main Page -->
+
+				<section class="contacts-sect">
+
+					<div class="row">
+
+						<div class="thumbnails contacts-thumbnails offset-ziro">
+							
+							<div class="thumbnail">
+								<div class="inner">
+									<div>
+										<div class="city-coat-box">
+											<img src="img/contacts/city_coat_01.png" alt="">
+										</div>
+									</div>
+									<div class="contacts-th-contacts">
+										<p class="p-1">Москва</p>
+										<p>Принимаем заказы с 10 до 20 ежедневно. Доставка по городу - круглосуточно.<br /> <a href="mailto:sales@baby-nest.ru">sales@baby-nest.ru</a></p>
+										<a href="tel:+79162612195" class="contact-th-link">+7 (916) 261 21 95</a>
+										<br />
+										<button type="button" class="call-back-btn">Обратный звонок</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumbnail">
+								<div class="inner">
+									<div>
+										<div class="city-coat-box">
+											<img src="img/contacts/city_coat_02.png" alt="">
+										</div>
+									</div>
+									<div class="contacts-th-contacts">
+										<p class="p-1">Санкт-Петербург</p>
+										<p>Будет помогать вам в покупке и доставке Дмитрий Александров<br /> <a href="mailto:dima@baby-nest.ru">dima@baby-nest.ru</a></p>
+										<a href="tel:+79162612195" class="contact-th-link">+7 (916) 261 21 95</a>
+										<br />
+										<button type="button" class="call-back-btn">Обратный звонок</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumbnail">
+								<div class="inner">
+									<div>
+										<div class="city-coat-box">
+											<img src="img/contacts/city_coat_03.png" alt="">
+										</div>
+										<div class="city-coat-box">
+											<img src="img/contacts/city_coat_04.png" alt="">
+										</div>
+									</div>
+									<div class="contacts-th-contacts">
+										<p class="p-1">Воронеж и Липецк</p>
+										<p>Будет помогать вам в покупке и доставке Роман Скуридин<br /> <a href="mailto:sales@baby-nest.ru">roma@baby-nest.ru</a></p>
+										<a href="tel:+79162612195" class="contact-th-link">+7 (916) 261 21 95</a>
+										<br />
+										<button type="button" class="call-back-btn">Обратный звонок</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+			<!-- /Section 5 Main Page -->
 
 			</div>
 		<!-- /Content -->
@@ -407,6 +591,7 @@
 
 		<script src="js/scripts.js"></script>
 
+
 		<script>
 			
 			// $(".main-slider").slick({
@@ -420,24 +605,48 @@
 			//   // autoplaySpeed: 3000
 			// });
 
-			 var mySwiper = new Swiper ('.swiper-container', {
-			    loop: true,
-			    pagination: $(".swiper-pagination"),
-			    paginationClickable: true,
-			    effect: 'coverflow',
-		        grabCursor: true,
-		        centeredSlides: true,
-		        slidesPerView: 'auto',
-		        coverflow: {
-		            rotate: 0,
-		            stretch: 0,
-		            depth: 135,
-		            modifier: 1,
-		            slideShadows : true
-		        }
-			  });
+			var mySwiper = new Swiper ('.swiper-container', {
+				loop: true,
+				pagination: $(".swiper-pagination"),
+				paginationClickable: true,
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				coverflow: {
+					rotate: 0,
+					stretch: 0,
+					depth: 135,
+					modifier: 1,
+					slideShadows : true
+				}
+			});
 
-			 $(".cart-slider").not('.slick-initialized').slick({
+			$(".cart-slider").not('.slick-initialized').slick({
+				dots: true,
+				arrows: false,
+				speed: 700,
+				slidesToShow: 1,
+				fade: true,
+				autoplay: true,
+				autoplaySpeed: 17000,
+				appendDots: $(".cart-slider-pagination"),
+				zIndex: 1
+			});
+
+			$(".good-slider").not('.slick-initialized').slick({
+				dots: true,
+				arrows: false,
+				speed: 700,
+				slidesToShow: 1,
+				fade: true,
+				autoplay: true,
+				autoplaySpeed: 17000,
+				appendDots: $(".good-slider-pagination"),
+				zIndex: 1
+			});
+
+			$(".card-promo-slider").not('.slick-initialized').slick({
 		      dots: true,
 		      arrows: false,
 		      speed: 700,
@@ -445,9 +654,20 @@
 		      fade: true,
 		      autoplay: true,
 		      autoplaySpeed: 17000,
-		      appendDots: $(".cart-slider-pagination"),
+		      appendDots: $(".card-promo-pagination"),
 		      zIndex: 1
 		    });
+
+			$("select").select2();
+
+			$(".feedback_slider_2").not('.slick-initialized').slick({
+				dots: true,
+				arrows: false,
+				speed: 700,
+				slidesToShow: 3,
+				autoplay: true,
+				autoplaySpeed: 3000
+			});
 
 		</script>
 	
