@@ -345,7 +345,7 @@ select {
 }
 
 .bottom-shadow {
-    background: rgba(245, 245, 246, 1);
+    /*background: rgba(245, 245, 246, 1);*/
     position: relative;
     padding-bottom: 0;
 }
@@ -2821,6 +2821,46 @@ footer {
     position: absolute;
     top: 78%;
     right: -68px;
+}
+
+.float-elem-6 {
+    width: 310px;
+    height: 230px;
+    position: absolute;
+    top: 3%;
+    right: -267px;
+}
+
+.float-elem-7 {
+    width: 265px;
+    height: 420px;
+    position: absolute;
+    top: 6%;
+    left: -265px;
+}
+
+.float-elem-8 {
+    width: 112px;
+    height: 140px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.float-elem-9 {
+    width: 87px;
+    height: 151px;
+    position: absolute;
+    top: 33%;
+    left: 106px;
+}
+
+.float-elem-10 {
+    width: 176px;
+    height: 164px;
+    position: absolute;
+    top: 42%;
+    right: -185px;
 }
 
 @keyframes vertical_float_elem {
