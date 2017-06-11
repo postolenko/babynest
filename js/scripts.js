@@ -6,6 +6,11 @@ $(document).ready(function() {
 
     // ----------------------
 
+    var countElementsInputIndex;
+    var countElementsVal;
+
+    // ----------------------
+
     getPromoFloatBlockSize();
 
     getFooterPosition();
@@ -80,6 +85,74 @@ $(document).ready(function() {
         });
 
     });
+
+    //  $(function() {
+
+    //     // var countElementsInputIndex;
+    //     // var countElementsVal;
+
+       
+
+    // });
+
+     // ----------------------------------------
+
+     // Калькулятор на странице Корзины товара
+
+     $(function() {
+
+        var priceGood;
+        var countGoods;
+        var priceMultiple;
+        var indexBasketRow;
+
+        $(".bascket-sect .choise-count button").click(function(countGoodsEvent) {
+
+            parentEl = $(this).parent();
+
+            for(;;) {
+
+                parentEl = parentEl.parent();
+
+                if(parentEl.hasClass("bascket-row")) {             
+
+                    indexBasketRow = parentEl.index();
+
+                    console.log(indexBasketRow + "   " + parentEl.attr("class"));
+
+                    break;
+
+                }
+
+            }
+
+            countElementsInputIndex = $(this).parent(".choise-count").index(".choise-count");
+
+            countElementsVal = $(".choise-count:eq("+ countElementsInputIndex +") .count-num .count-num-val").val();
+
+            if( countElementsVal <=  -1 ) {
+
+                $(".choise-count:eq("+ countElementsInputIndex +") .count-num .count-num-val").val(0);
+
+            }
+
+            if( $(this).hasClass("minus") && countElementsVal > 0 ) {
+
+                countElementsVal--;
+
+            } else if( $(this).hasClass("plus") ) {
+
+                countElementsVal++;
+
+            }
+
+            $(".choise-count:eq("+ countElementsInputIndex +") .count-num .count-num-val").val(countElementsVal);
+
+        });
+
+     });
+
+     // -----------------------------------------
 
     function getBootomPaddingForUseDescripts() {
 
