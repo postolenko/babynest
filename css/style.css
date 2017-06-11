@@ -2813,11 +2813,11 @@ section.video-sect {
     display: block;
     width: 100%;
     margin: 10px 0;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
 }
 
 .input-field input {
@@ -2827,11 +2827,11 @@ section.video-sect {
     padding: 0 2%;
     border: none;
     background: rgba(105, 178, 185, 1);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
     -webkit-box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, .3);
     -moz-box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, .3);
     box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, .3);
@@ -2851,11 +2851,11 @@ section.video-sect {
     overflow: hidden;
     border: 1px solid transparent;
     background: rgba(105, 178, 185, 1);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
     -webkit-box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, .3);
     -moz-box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, .3);
     box-shadow: inset 0px 3px 6px 0px rgba(0, 0, 0, .3);
@@ -2872,6 +2872,14 @@ section.video-sect {
 
 .radio_btns-block {
     padding: 0 0 26px 0;
+}
+
+.radio_btns-block h3 {
+    font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .radio_btns-block h3 + .radio-box {
@@ -3702,7 +3710,101 @@ footer {
     100% {
         top: 225px;
     }
+
 }
 
 
 /*-- /Floats Elements --*/
+
+
+/*-- Popups --*/
+
+.popups-section {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+/*.popups-section.scroll {
+    height: 100vh;
+}*/
+
+.popup-bg {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
+}
+
+.popup-block {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.popup-block:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    height: 100vh;
+    width: 1%;
+}
+
+.center-block {
+    display: inline-block;
+    vertical-align: middle;
+    width: 98%;
+    text-align: center;
+}
+
+.popup {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 98vh;
+    min-height: auto;
+    text-align: left;
+    padding: 31px 2.6%;
+    border: 30px solid #ffffff;
+    background: rgba(146, 205, 211, 1);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+}
+
+.popup h2 {
+    color: #ffffff;
+    padding: 0 0 42px 0;
+}
+
+.popup h3 {
+    font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.popup .radio_btns-block {
+    padding: 25px 0 26px 0;
+}
+
+.popup .card-btns {
+    margin: 0 0 44px 0;
+}
+
+/*-- .Popups --*/

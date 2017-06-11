@@ -11,11 +11,17 @@ $(document).ready(function() {
 
     // ----------------------
 
+    var dataAttr;
+
+    // ----------------------
+
     getPromoFloatBlockSize();
 
     getFooterPosition();
 
     getBootomPaddingForUseDescripts();
+
+    getContactCircleSize();
 
     $(window).resize(function() {
 
@@ -28,6 +34,8 @@ $(document).ready(function() {
         getPromoFloatBlockSize();
 
         getBootomPaddingForUseDescripts();
+
+        getContactCircleSize();
 
     });
 
@@ -156,13 +164,35 @@ $(document).ready(function() {
 
      $(function() {
 
-        $(".contacts-thumbnails.contacts-page .thumbnail .inner").each(function() {
+        // var dataAttr;
 
-            $(this).outerWidth( $(this).outerHeight() );
+        $(".show_popup").click(function() {
+
+            dataAttr = $(this).attr("data-popup");
+
+            $(".popups-section").fadeIn(300);
+            $(".popup-bg").fadeIn(300);
+            $("[data-popup-name = '"+ dataAttr +"']").fadeIn(300);
 
         });
 
+        $(".popup-bg").click(function() {
+            hidePopup();
+        });
+
+        $(this).keydown(function(eventObject){
+            if ( eventObject.which == 27 && $(".popups-section").is(":visible") ) {
+                hidePopup();
+            }
+        });
+
      });
+
+     function hidePopup(dataAttr) {        
+        $(".popups-section").fadeOut(300);
+        $(".popup-bg").fadeOut(300);
+        $("[data-popup-name = '"+ dataAttr +"']").fadeOut(300);
+     }
 
      // -----------------------------------------
 
@@ -210,5 +240,14 @@ $(document).ready(function() {
         });
 
     }
+
+
+     function getContactCircleSize() {
+        $(".contacts-thumbnails.contacts-page .thumbnail .inner").each(function() {
+
+            $(this).outerWidth( $(this).outerHeight() );
+
+        });
+     }
 
 });
