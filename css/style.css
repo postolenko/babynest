@@ -795,17 +795,27 @@ select {
     left: 0;
 }
 
+/*.shape-sect-box {
+    width: 100%;
+    height: 450px;
+    outline: 1px solid red;
+    background-image: url(../img/shape_sect.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 20% 0;
+}*/
+
 .shape-sect-box img {
-    display: block;
-    /*display: none;*/
-    width: 109%;
+    /*display: block;*/
+    display: none;
+    width: 110%;
     height: auto;
     position: absolute;
     top: 0;
-    left: -9%;
+    left: 0;
 }
 
-.shape-sect-box img.horizontal_moving {
+/*.shape-sect-box img.horizontal_moving {
     -webkit-animation: horizontal_float 18s infinite;
     -moz-animation:    horizontal_float 18s infinite;
     -o-animation:      horizontal_float 18s infinite;
@@ -866,7 +876,7 @@ select {
     100% {
         left: -9%;
     }
-}
+}*/
 
 .promo-sect .row {
     position: relative;
