@@ -70,7 +70,7 @@ $(document).ready(function() {
 
             setInterval(function() {
 
-                imgLeftCoor +=.5 * coorDimensionModule;
+                imgLeftCoor +=.3 * coorDimensionModule;
 
                 if( imgLeftCoor <= (-1 * minusDif )) {
 
