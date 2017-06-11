@@ -57,6 +57,8 @@ $(document).ready(function() {
         var coorDimensionModule = 1;
         var imgLeftCoor = 0;
 
+        console.log("bg");
+
         setTimeout(function() {
 
             $(".shape-sect-box").addClass("opacity_1")
