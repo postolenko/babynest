@@ -8,6 +8,13 @@ $(document).ready(function() {
 
     // --------------------------
 
+    var movingImgWidth;
+    var minusDif;
+    var coorDimensionModule;
+    var imgLeftCoor;
+
+    // --------------------------
+
     var setFooterPositionInterval;
     var contentCoor;
     var footerCoor;
@@ -52,16 +59,14 @@ $(document).ready(function() {
 
     $(function() {
 
-        var movingImgWidth = $(".shape-sect-box").width();
-        var minusDif = movingImgWidth - bodyWidth;
-        var coorDimensionModule = 1;
-        var imgLeftCoor = 0;
-
-        console.log("bg");
-
         setTimeout(function() {
 
-            $(".shape-sect-box").addClass("opacity_1")
+            $(".shape-sect-box .moving_bg").fadeIn(700);
+
+            movingImgWidth = $(".shape-sect-box .moving_bg").width();
+            minusDif = movingImgWidth - bodyWidth;
+            coorDimensionModule = 1;
+            imgLeftCoor = 0;
 
             setInterval(function() {
 
@@ -77,7 +82,7 @@ $(document).ready(function() {
 
                 }
 
-                $(".shape-sect-box").css({
+                $(".shape-sect-box .moving_bg").css({
                     "left" : imgLeftCoor + "px"
                 });
 
