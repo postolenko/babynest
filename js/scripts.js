@@ -154,6 +154,18 @@ $(document).ready(function() {
 
      // -----------------------------------------
 
+     $(function() {
+
+        $(".contacts-thumbnails.contacts-page .thumbnail .inner").each(function() {
+
+            $(this).outerWidth( $(this).outerHeight() );
+
+        });
+
+     });
+
+     // -----------------------------------------
+
     function getBootomPaddingForUseDescripts() {
 
         if( $(".two-cols-box > .col-2 .use-descripts").length > 0 ) {

@@ -590,11 +590,11 @@ select {
 
 .main-nav li a.active,
 .main-nav li a:active {
-    color: #91cdd5;
+    color: #92cdd3;
 }
 
 .main-nav li a:hover {
-    color: #91cdd5;
+    color: #92cdd3;
 }
 
 .tel-link {
@@ -2608,7 +2608,8 @@ section.video-sect {
     display: block;
     width: 100%;
     max-width: 80px;
-    height: 80px
+    height: 80px;
+    overflow: hidden;
 }
 
 .bascket-row .cell-1 .img-box img {
@@ -2924,6 +2925,85 @@ section.video-sect {
 }
 
 /*-- /Section 1 Bsket Page --*/
+
+/*-- Section 1 Contacts Page --*/
+
+.contacts-block {
+    position: relative;
+    margin: 0 0 110px 0;
+}
+
+.contacts-block .contacts-thumbnails {
+    padding-top: 40px;
+}
+
+.contacts-thumbnails.contacts-page {
+    position: relative;
+    z-index: 2;
+}
+
+.contacts-thumbnails.contacts-page .thumbnail {
+    text-align: center;
+    position: relative;
+}
+
+.contacts-thumbnails.contacts-page .thumbnail .inner {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    min-width: 380px;
+    min-height: 380px;
+    padding: 27px 7% 50px 7%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, .25);
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, .25);
+}
+
+.contacts-thumbnails.contacts-page .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 0;
+}
+
+.contacts-thumbnails.contacts-page .contact-th-link {
+    margin: 8px 0 9px 0;
+}
+
+.contacts-thumbnails.contacts-page .thumbnail.th-1 .inner {
+    padding-top: 25px;
+}
+
+.contacts-thumbnails.contacts-page .thumbnail.th-2 {
+    margin-top: 320px;
+}
+
+.contacts-thumbnails.contacts-page .thumbnail.th-2 .inner {
+    padding-top: 35px;
+}
+
+.contacts-thumbnails.contacts-page .thumbnail.th-3 {
+    margin-top: 123px;
+}
+
+.contacts-thumbnails.contacts-page .thumbnail.th-3 .inner {
+    padding-top: 54px;
+}
+
+.contacts_lines {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 14%;
+}
+
+/*-- /Section 1 Contacts Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
@@ -3331,6 +3411,38 @@ footer {
     left: -84px;
 }
 
+.float-elem-15 {
+    width: 115px;
+    height: 73px;
+    position: absolute;
+    top: 24%;
+    right: 68px;
+}
+
+.float-elem-16 {
+    width: 95px;
+    height: 79px;
+    position: absolute;
+    top: 29%;
+    left: -87px;
+}
+
+.float-elem-17 {
+    width: 79px;
+    height: 96px;
+    position: absolute;
+    top: 51%;
+    left: 29%;
+}
+
+.float-elem-18 {
+    width: 61px;
+    height: 75px;
+    position: absolute;
+    top: 68%;
+    left: 68%;
+}
+
 @keyframes vertical_float_elem {
     0% {
         margin-top: -60px;
@@ -3454,5 +3566,143 @@ footer {
         margin-bottom: 0px;
     }
 }
+
+.float-elem-13 {
+    width: 271px;
+    height: 135px;
+    position: absolute;
+    top: -23px;
+    left: 44%;
+    -webkit-animation: vertical_float_elem_13 9s infinite;
+    -moz-animation:    vertical_float_elem_13 9s infinite;
+    -o-animation:      vertical_float_elem_13 9s infinite;
+    animation:         vertical_float_elem_13 9s infinite;
+}
+
+@keyframes vvertical_float_elem_13 {
+    0% {
+        top: -23px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -23px;
+    }
+}
+
+@-webkit-keyframes vertical_float_elem_13 {
+    0% {
+        top: -23px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -23px;
+    }
+}
+
+@-moz-keyframes vertical_float_elem_13 {
+    0% {
+        top: -23px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -23px;
+    }
+}
+
+@-o-keyframes vertical_float_elem_13 {
+    0% {
+        top: -23px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -23px;
+    }
+}
+
+
+.float-elem-14 {
+    width: 131px;
+    height: 120px;
+    position: absolute;
+    top: 265px;
+    left: 38%;
+    -webkit-animation: vertical_float_elem_14 9s infinite;
+    -moz-animation:    vertical_float_elem_14 9s infinite;
+    -o-animation:      vertical_float_elem_14 9s infinite;
+    animation:         vertical_float_elem_14 9s infinite;
+}
+
+@keyframes vvertical_float_elem_14 {
+    0% {
+        top: 225px;
+    }
+
+    50% {
+        top: 244px;
+    }
+
+    100% {
+        top: 225px;
+    }
+}
+
+@-webkit-keyframes vertical_float_elem_14 {
+    0% {
+        top: 225px;
+    }
+
+    50% {
+        top: 244px;
+    }
+
+    100% {
+        top: 225px;
+    }
+}
+
+@-moz-keyframes vertical_float_elem_14 {
+    0% {
+        top: 225px;
+    }
+
+    50% {
+        top: 244px;
+    }
+
+    100% {
+        top: 225px;
+    }
+}
+
+@-o-keyframes vertical_float_elem_14 {
+    0% {
+        top: 225px;
+    }
+
+    50% {
+        top: 244px;
+    }
+
+    100% {
+        top: 225px;
+    }
+}
+
 
 /*-- /Floats Elements --*/
