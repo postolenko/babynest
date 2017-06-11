@@ -52,14 +52,14 @@ $(document).ready(function() {
 
     $(function() {
 
-        var movingImgWidth = $(".shape-sect-box .moving_bg").width();
+        var movingImgWidth = $(".shape-sect-box").width();
         var minusDif = movingImgWidth - bodyWidth;
         var coorDimensionModule = 1;
         var imgLeftCoor = 0;
 
         setTimeout(function() {
 
-            $(".shape-sect-box .moving_bg").fadeIn(700);
+            $(".shape-sect-box").addClass("opacity_1")
 
             setInterval(function() {
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
                 }
 
-                $(".shape-sect-box img").css({
+                $(".shape-sect-box").css({
                     "left" : imgLeftCoor + "px"
                 });
 

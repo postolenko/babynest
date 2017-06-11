@@ -788,11 +788,39 @@ select {
     /*display: none;*/
     /*opacity: .3;*/
     height: 415px;
-    width: 100%;
+    width: 110%;
     overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
+    opacity: .01;
+    background-image: url(../img/shape_sect.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: 3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: 3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+.shape-sect-box.opacity_1 {
+    opacity: 1;
 }
 
 /*.shape-sect-box {
