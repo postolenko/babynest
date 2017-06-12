@@ -57,40 +57,40 @@ $(document).ready(function() {
     });
 
 
-    $(function() {
+    // $(function() {
 
-        setTimeout(function() {
+    //     setTimeout(function() {
 
-            $(".shape-sect-box .moving_bg").fadeIn(700);
+    //         $(".shape-sect-box .moving_bg").fadeIn(700);
 
-            movingImgWidth = $(".shape-sect-box .moving_bg").width();
-            minusDif = movingImgWidth - bodyWidth;
-            coorDimensionModule = 1;
-            imgLeftCoor = 0;
+    //         movingImgWidth = $(".shape-sect-box .moving_bg").width();
+    //         minusDif = movingImgWidth - bodyWidth;
+    //         coorDimensionModule = 1;
+    //         imgLeftCoor = 0;
 
-            setInterval(function() {
+    //         setInterval(function() {
 
-                imgLeftCoor +=.3 * coorDimensionModule;
+    //             imgLeftCoor +=.3 * coorDimensionModule;
 
-                if( imgLeftCoor <= (-1 * minusDif )) {
+    //             if( imgLeftCoor <= (-1 * minusDif )) {
 
-                    coorDimensionModule = 1;
+    //                 coorDimensionModule = 1;
 
-                } else if( imgLeftCoor >= 0) {
+    //             } else if( imgLeftCoor >= 0) {
 
-                    coorDimensionModule = -1;
+    //                 coorDimensionModule = -1;
 
-                }
+    //             }
 
-                $(".shape-sect-box .moving_bg").css({
-                    "left" : imgLeftCoor + "px"
-                });
+    //             $(".shape-sect-box .moving_bg").css({
+    //                 "left" : imgLeftCoor + "px"
+    //             });
 
-            }, 35);
+    //         }, 35);
 
-        }, 1000);
+    //     }, 1000);
 
-    });
+    // });
 
     // ----------------------------------------
 
