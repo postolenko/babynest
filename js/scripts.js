@@ -214,7 +214,7 @@ $(document).ready(function() {
 
                     indexBasketRow = parentEl.index(".bascket-row");
 
-                    console.log(indexBasketRow + "   " + parentEl.attr("class"));
+                    // console.log(indexBasketRow + "   " + parentEl.attr("class"));
 
                     break;
 
@@ -248,28 +248,114 @@ $(document).ready(function() {
             priceMultiple = priceGood * countElementsVal;
             $(".bascket-row:eq("+ indexBasketRow + ") .price_multipple").val(priceMultiple);
 
-            setTimeout(function() {
+            // setTimeout(function() {
 
-                totalPrice = 0;
+                getTotalPRice();
 
-                for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
+                // totalPrice = 0;
 
-                    if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
+                // for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
 
-                        priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
+                //     if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
 
-                        totalPrice += priceMultipleVal;
-                        $(".price_total_sum").val(totalPrice);
+                //         priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
 
-                    }
+                //         totalPrice += priceMultipleVal;
+                //         $(".price_total_sum").val(totalPrice);
+
+                //     }
+
+                // }
+
+            // }, 400);
+
+        });
+
+        $(".bascket-sect .dell-btn").click(function() {
+
+            parentEl = $(this).parent();
+
+            for(;;) {
+
+                parentEl = parentEl.parent();
+
+                if(parentEl.hasClass("bascket-row")) {             
+
+                    indexBasketRow = parentEl.index(".bascket-row");
+
+                    // console.log(indexBasketRow + "   " + parentEl.attr("class"));
+
+                    break;
 
                 }
 
-            }, 700);
+            }
+
+            $(".bascket-row:eq("+ indexBasketRow +")").fadeOut(300);
+
+            setTimeout(function() {
+
+                $(".bascket-row:eq("+ indexBasketRow +")").remove();
+
+            }, 500);
+
+            
+
+            setTimeout(function() {
+
+                getTotalPRice();
+
+                // totalPrice = 0;
+
+                // for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
+
+                //     console.log(indexRow);
+
+                //     if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
+
+                //         priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
+
+                //         totalPrice += priceMultipleVal;
+                //         $(".price_total_sum").val(totalPrice);
+
+                //     }
+
+                // }
+
+            }, 1000);
 
         });
 
      });
+
+     function getTotalPRice() {
+
+        totalPrice = 0;
+
+        if( !$(".bascket-table .price_multipple").length ) {
+
+            totalPrice = 0;
+
+        } else {
+
+            for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
+
+                if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
+
+                    priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
+
+                    totalPrice += priceMultipleVal;
+                    
+
+                }
+
+            }
+
+        }
+
+        $(".price_total_sum").val(totalPrice);
+
+     }
 
      // -----------------------------------------
 
