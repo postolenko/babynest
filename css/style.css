@@ -472,6 +472,9 @@ select {
     border-radius: 50%;
     border: 4px solid #ffffff;
     background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 13px 8px 0px rgba(0, 0, 0, .11);
+    -moz-box-shadow: 0px 13px 8px 0px rgba(0, 0, 0, .11);
+    box-shadow: 0px 13px 8px 0px rgba(0, 0, 0, .11);
 }
 
 .slick-dots li button {
@@ -487,6 +490,8 @@ select {
 
 .slick-dots li.slick-active {
     background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+
 }
 
 /*-- /Slick Pagination --*/
@@ -2046,7 +2051,7 @@ p.price {
 
 .card-block .col-2 {
     width: 58%;
-    padding: 39px 0 0 0;
+    padding: 36px 0 0 0;
 }
 
 .card-block h1 {
@@ -2256,7 +2261,7 @@ p.price {
     bottom: 0;
     right: 0;
     text-align: right;
-    padding: 10px 37px 32px 0;
+    padding: 10px 37px 34px 0;
 }
 
 .good-slider-pagination ul {
@@ -2293,11 +2298,13 @@ p.price {
 .photos-slider-pagination {
     position: absolute;
     bottom: 35px;
-    right: 65px;
-    height: 30px;
+    right: 37px;
     text-align: right;
     z-index: 3;
-    outline: 1px solid red;
+}
+
+.photos-slider-pagination .slick-dots {
+    padding: 0;
 }
 
 /*-- /Section 1 Good Page --*/
@@ -2654,7 +2661,7 @@ section.video-sect {
 }
 
 .good-card h1 {
-    padding: 5px 0 36px 0;
+    padding: 5px 0;
 }
 
 .bascket-table {
