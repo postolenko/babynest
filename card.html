@@ -238,9 +238,9 @@
 
 							</div>
 
-							<div class="card-promo-slider-box">
+							<div class="photos-slider-box">
 							
-								<div class="card-promo-slider cart-slider">
+								<div class="photos-slider cart-slider">
 									<div class="slide">
 										<img src="img/main_slider/slide_01.jpg" alt="" >
 									</div>
@@ -252,7 +252,7 @@
 									</div>
 								</div>
 
-								<div class="card-promo-pagination"></div>
+								<div class="photos-slider-pagination"></div>
 
 							</div>
 
@@ -411,7 +411,15 @@
 						<h2>Видеообзор</h2>
 
 						<div class="video-box">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/7WFXesxq7xs" frameborder="0" allowfullscreen></iframe>
+							<div class="inner">
+								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/7WFXesxq7xs" frameborder="0" allowfullscreen></iframe>
+								<div class="hover-block">
+									<img src="img/video_bg.jpg" alt="" class="video-bg" />
+									<button type="button" class="play-video" id="play_video_1"></button>
+								</div>
+
+							</div>
 						</div>
 
 					</div>
@@ -627,6 +635,8 @@
 
 
 		<script>
+
+		$(document).ready(function() {
 			
 			// $(".main-slider").slick({
 			//   dots: false,
@@ -680,20 +690,6 @@
 				zIndex: 1
 			});
 
-			$(".card-promo-slider").not('.slick-initialized').slick({
-		      dots: true,
-		      arrows: false,
-		      speed: 700,
-		      slidesToShow: 1,
-		      fade: true,
-		      autoplay: true,
-		      autoplaySpeed: 17000,
-		      appendDots: $(".card-promo-pagination"),
-		      zIndex: 1
-		    });
-
-			$("select").select2();
-
 			$(".feedback_slider_2").not('.slick-initialized').slick({
 				dots: true,
 				arrows: false,
@@ -703,6 +699,21 @@
 				autoplay: true,
 				autoplaySpeed: 7000
 			});
+
+			$(".photos-slider").not('.slick-initialized').slick({
+		      dots: true,
+		      arrows: false,
+		      speed: 700,
+		      slidesToShow: 1,
+		      fade: true,
+		      autoplay: true,
+		      autoplaySpeed: 17000,
+		      appendDots: $(".photos-slider-pagination")
+		    });
+
+		    $("select").select2();
+
+		});
 
 		</script>
 	

@@ -143,22 +143,47 @@ $(document).ready(function() {
 
     });
 
-    $(function() {
+    // $(function() {
 
-        $(".video-box iframe").each(function() {
+    //     var indexVideoBox;
+    //     var videoSrcPath;
+    //     var videoAttrId;
 
-            $(this).attr("src", $(this).attr("src") + "?autoplay=0&controls=0&rel=0&showinfo=0");
+    //     $(".video-box .play-video").click(function() {
 
-        });
+    //         parentEl = $(this).parent();
 
-    });
+    //         for(;;) {
 
-    //  $(function() {
+    //             parentEl = parentEl.parent();
 
-    //     // var countElementsInputIndex;
-    //     // var countElementsVal;
+    //             if(parentEl.hasClass("video-box")) {
 
-       
+    //                 indexVideoBox = parentEl.index(".video-box");
+
+    //                 break;
+
+    //             }
+
+    //         }
+
+    //         console.log(indexVideoBox);
+
+    //         $(".video-box:eq("+ indexVideoBox +") iframe").attr("id","video_" + indexVideoBox);
+
+    //         videoAttrId = $(".video-box:eq("+ indexVideoBox +") iframe").attr("id");
+
+    //         videoSrcPath = $(".video-box:eq("+ indexVideoBox +") iframe").attr("src");
+
+    //         $(".video-box:eq("+ indexVideoBox +") .hover-block").fadeOut(500);
+
+    //         $(".video-box:eq("+ indexVideoBox +") iframe").attr("src",  videoSrcPath + "&enablejsapi=1");
+
+    //         // videoId.playVideo();
+
+    //         // $(".video-box:eq("+ indexVideoBox +") iframe").attr("src", videoSrcPath + "&autoplay=1");
+
+    //     });
 
     // });
 
@@ -172,6 +197,10 @@ $(document).ready(function() {
         var countGoods;
         var priceMultiple;
         var indexBasketRow;
+        var indexRow;
+        var totalPrice = 0;
+        var priceMultipleVal = 0;
+        // var priceArr = [];
 
         $(".bascket-sect .choise-count button").click(function(countGoodsEvent) {
 
@@ -183,7 +212,7 @@ $(document).ready(function() {
 
                 if(parentEl.hasClass("bascket-row")) {             
 
-                    indexBasketRow = parentEl.index();
+                    indexBasketRow = parentEl.index(".bascket-row");
 
                     console.log(indexBasketRow + "   " + parentEl.attr("class"));
 
@@ -214,6 +243,29 @@ $(document).ready(function() {
             }
 
             $(".choise-count:eq("+ countElementsInputIndex +") .count-num .count-num-val").val(countElementsVal);
+
+            priceGood = parseInt( $(".bascket-row:eq("+ indexBasketRow + ") .price_one_good").val() );
+            priceMultiple = priceGood * countElementsVal;
+            $(".bascket-row:eq("+ indexBasketRow + ") .price_multipple").val(priceMultiple);
+
+            setTimeout(function() {
+
+                totalPrice = 0;
+
+                for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
+
+                    if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
+
+                        priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
+
+                        totalPrice += priceMultipleVal;
+                        $(".price_total_sum").val(totalPrice);
+
+                    }
+
+                }
+
+            }, 700);
 
         });
 
@@ -358,5 +410,18 @@ $(document).ready(function() {
 
         });
      }
+
+     // ---------------
+
+    // function onYouTubePlayerAPIReady() {
+    //   player = new YT.Player(videoAttrId, {
+    //     events: {'onReady': onPlayerReady}
+    //   });
+    // }
+
+    // function onPlayerReady(event) {
+    //   document.getElementById("play_video_1").addEventListener("click", function() {player.playVideo();});
+    //   // document.getElementById("pauseYoutube").addEventListener("click", function() {player.pauseVideo();});
+    // }
 
 });
