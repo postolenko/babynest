@@ -92,34 +92,7 @@ $(document).ready(function() {
 
     });
 
-
-    // $(function() {
-
-    //     // var SHAPE_WIDTH = 1928;
-    //     // var SHAPE_HEIGHT = 390;
-
-    //     // var shapeHeightActive = SHAPE_HEIGHT * bodyWidth / SHAPE_WIDTH;
-
-    //     setTimeout(function() {
-
-    //         $(".shape-sect-box img").addClass("horizontal_moving");
-
-    //     });
-
-    // });
-
-
-    // $(function() {
-
-    //     $(".mosaik-thumbnails .thumbnail").each(function() {
-
-    //         console.log("sdsd");
-
-    //         $(this).css({ "height" : $(this).height() + "px"});
-
-    //     });
-
-    // });
+    // ----------------------------------------
 
     $(function() {
 
@@ -334,6 +307,44 @@ $(document).ready(function() {
 
      // -----------------------------------------
 
+    $(document).ready(function() {
+
+        var indexVideoBox;
+        var videoIdAttr;
+
+        $(".play-video").on("click", function(playBtnEvent) {
+
+            parentEl = $(this).parent();
+
+            for(;;) {
+
+                parentEl = parentEl.parent();
+
+                if(parentEl.hasClass("video-box")) {             
+
+                    indexVideoBox = parentEl.index(".video-box");
+
+                    videoIdAttr = "video_" + indexVideoBox;
+
+                    $(".video-box:eq("+ indexVideoBox +") iframe").attr("id", videoIdAttr);
+
+                    break;
+
+                }
+
+            }
+
+            $(".video-box:eq("+ indexVideoBox +") .hover-block").fadeOut(300);
+
+            $("#" + videoIdAttr)[0].src += "?rel=0&autoplay=1";
+            playBtnEvent.preventDefault();
+
+        });
+
+    });
+
+     // -----------------------------------------
+
      $(function() {
 
         var noUiValueText;
@@ -501,18 +512,5 @@ $(document).ready(function() {
         $(".price_total_sum").val(totalPrice);
 
      }
-
-     // ---------------
-
-    // function onYouTubePlayerAPIReady() {
-    //   player = new YT.Player(videoAttrId, {
-    //     events: {'onReady': onPlayerReady}
-    //   });
-    // }
-
-    // function onPlayerReady(event) {
-    //   document.getElementById("play_video_1").addEventListener("click", function() {player.playVideo();});
-    //   // document.getElementById("pauseYoutube").addEventListener("click", function() {player.pauseVideo();});
-    // }
 
 });
