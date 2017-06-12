@@ -449,7 +449,7 @@
 				var nodes;
 
 				noUiSlider.create(ageRange, {
-					start: [1, 4],
+					start: [1, 5],
 					connect: true,
 					behaviour: 'tap',
 					step: 1,
@@ -472,6 +472,16 @@
 				ageRange.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
 
 					nodes[handle].innerHTML = parseFloat( values[handle] );
+
+					// if( parseInt( $("#upper-value").text() ) > 4 && parseInt( $("#upper-value").text() ) <= 5 ) {
+
+					// 	$("#upper-value").text(6);
+
+					// } else if( parseInt( $("#upper-value").text() ) > 5 ) {
+
+					// 	$("#upper-value").text(maxAge);
+
+					// }
 
 					if( parseInt( $("#upper-value").text() ) > 4 && parseInt( $("#upper-value").text() ) <= 6 ) {
 
