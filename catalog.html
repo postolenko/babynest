@@ -17,12 +17,15 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">	
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" href="vendors/css/select2.css" >
+	<link rel="stylesheet" href="vendors/css/nouislider.css" >
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/swiper.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/placeholders.js"></script>
+	<script type="text/javascript" src="vendors/js/isotope-docs.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/select2.js"></script>
+	<script src="vendors/js/nouislider.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
@@ -124,7 +127,7 @@
 
 			<!-- Section 1 Catalog Page -->
 
-				<section>
+				<section class="choise-block-sect">
 
 					<div class="row">
 
@@ -145,7 +148,7 @@
 
 								<h2>Каталог Babynest</h2>
 
-								<div class="choise-form-block">
+								<div class="choise-form-block offset-ziro">
 
 									<form>
 
@@ -161,6 +164,14 @@
 
 										<div class="range-slide-box">
 											<div id="age_range_sl"></div>
+
+											<!-- Значения выбранного возраста можно взять из values-block  .  Данное поле скрыто от пользователей -->
+											<div class="values-block">
+												<span id="lower-value"></span>
+												<span id="upper-value"></span>
+											</div>
+											<!-- ///////////////////////// -->
+
 										</div>
 
 									</form>
@@ -434,21 +445,40 @@
 			if($("#age_range_sl").length > 0) {
 
 				var ageRange = document.getElementById('age_range_sl');
+				var maxAge = 8;
+				var nodes;
 
 				noUiSlider.create(ageRange, {
-					start: [2, 6],
+					start: [1, 4],
 					connect: true,
-					behaviour: 'tap-drag',
-					step: .5,
+					behaviour: 'tap',
+					step: 1,
 					range: {
 						'min': 0,
-						'max': 8
+						'max': 6
 					},
 					pips: {
 						mode: 'steps',
 						stepped: true,
 						density: 1
 					}
+				});
+
+				nodes = [
+					document.getElementById('lower-value'),
+					document.getElementById('upper-value')
+				];
+
+				ageRange.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+
+					nodes[handle].innerHTML = parseFloat( values[handle] );
+
+					if( parseInt( $("#upper-value").text() ) > 4 && parseInt( $("#upper-value").text() ) <= 6 ) {
+
+						$("#upper-value").text(maxAge);
+
+					}
+
 				});
 
 			}

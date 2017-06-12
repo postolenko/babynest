@@ -223,6 +223,56 @@ $(document).ready(function() {
 
      $(function() {
 
+        var noUiValueText;
+
+        $(".noUi-value").each(function() {
+
+            noUiValueText = parseInt( $(this).text() );
+
+            if( noUiValueText == 0 || noUiValueText >= 5) {
+
+                $(this).append("<span class='text_val'>лет</span>");
+
+            } else if( noUiValueText == 1) {
+
+                $(this).append("<span class='text_val'>год</span>");
+
+            } else {
+
+                $(this).append("<span class='text_val'>года</span>");
+
+            }
+
+            if( noUiValueText > 4 && noUiValueText < 6 ) {
+                $(this).css({
+                    "opacity" : 0
+                });
+            }
+
+            if( noUiValueText == 6 ) {
+
+                $(this).text("8");
+
+                if( !$(this).children(".text_val").length ) {
+
+                    $(this).append("<span class='text_val'>лет</span>");
+
+                }
+
+            }
+
+        });
+
+        $(".noUi-value.noUi-value-large:eq("+ 0 +")").css({
+            "left" : "2%"
+        });    
+
+     });
+
+     // -----------------------------------------
+
+     $(function() {
+
         // var dataAttr;
 
         $(".show_popup").click(function() {

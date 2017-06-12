@@ -1111,6 +1111,10 @@ select {
     /*border: 30px solid #ffffff;*/
 }
 
+.main-slider .promo-block .promo-block-content {
+    height: 510px;
+}
+
 .promo-block {
     display: block;
     width: 100%;
@@ -1118,7 +1122,7 @@ select {
     position: relative;
     overflow: hidden;
     max-width: 1180px;
-    height: 400px;
+    height: 440px;
     border: 30px solid #ffffff;
 }
 
@@ -1198,9 +1202,15 @@ select {
     display: block;
     width: 310px;
     position: absolute;
-    bottom: 30px;
+    bottom: 0;
     left: 0;
-    padding: 0 0 66px 3.5%;
+    padding: 0 0 59px 3.5%;
+}
+
+.main-slider .promo-block-content .bottom-block {
+    bottom: 13px;
+    left: 0;
+    padding: 0 0 33px 3.5%;
 }
 
 .promo-block .bottom-block p {
@@ -1213,6 +1223,15 @@ select {
 }
 
 .promo-block .bottom-block p.price {
+    font-family: "Verveine Corp", Verdana, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #000000;
+    padding: 3px 0;
+}
+
+.main-slider p.good-price {
     font-family: "Verveine Corp", Verdana, Arial, sans-serif;
     font-size: 28px;
     line-height: 34px;
@@ -1579,8 +1598,13 @@ select {
 
 /*-- Section 1 Catalog Page --*/
 
+.choise-block-sect {
+    padding-bottom: 10px;
+}
+
 .choise-block {
     margin: 10px 0;
+    padding: 30px 3%;
     border: 30px solid #ffffff;
     background-color: rgb(255, 255, 255);
     background-image: url(../img/choise_box_bg.png);
@@ -1588,7 +1612,7 @@ select {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 300px;
+    /*height: 300px;*/
     -webkit-box-shadow: 0px 17px 70px 0px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0px 17px 70px 0px rgba(0, 0, 0, .3);
     box-shadow: 0px 17px 70px 0px rgba(0, 0, 0, .3);
@@ -1607,10 +1631,10 @@ select {
     position: absolute;
     top: 0;
     left: 0;
-    background: -moz-linear-gradient(left, rgba(146,205,211,1) 0%, rgba(146,205,211,0.25) 100%);
-    background: -webkit-linear-gradient(left, rgba(146,205,211,1) 0%,rgba(146,205,211,0.25) 100%);
-    background: linear-gradient(to right, rgba(146,205,211,1) 0%,rgba(146,205,211,0.25) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#92cdd3", endColorstr="#4092cdd3",GradientType=1 );
+    background: -moz-linear-gradient(left, rgba(146,205,211,1) 0%, rgba(146,205,211,0.47) 100%);
+    background: -webkit-linear-gradient(left, rgba(146,205,211,1) 0%,rgba(146,205,211,0.47) 100%);
+    background: linear-gradient(to right, rgba(146,205,211,1) 0%,rgba(146,205,211,0.47) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92cdd3', endColorstr='#7892cdd3',GradientType=1 );
 }
 
 .choise-block h2 {
@@ -1622,7 +1646,7 @@ select {
 }
 
 .choise-form-block {
-
+    margin: 28px 0 16px 0;
 }
 
 .checkbox-block {
@@ -1630,6 +1654,12 @@ select {
     vertical-align: top;
     position: relative;
     margin: 10px 40px 10px 3px;
+}
+
+.choise-form-block .checkbox-block {
+    width: 21%;
+    padding: 0 1%;
+    margin: 24px 0 10px 0;
 }
 
 .checkbox-block label {
@@ -1669,7 +1699,23 @@ select {
 }
 
 .range-slide-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    padding: 30px 0;
+    position: relative;
+}
 
+.values-block {
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .01;
 }
 
 .goods-thumbnails {
