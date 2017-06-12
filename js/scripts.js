@@ -200,7 +200,6 @@ $(document).ready(function() {
         var indexRow;
         var totalPrice = 0;
         var priceMultipleVal = 0;
-        // var priceArr = [];
 
         $(".bascket-sect .choise-count button").click(function(countGoodsEvent) {
 
@@ -213,8 +212,6 @@ $(document).ready(function() {
                 if(parentEl.hasClass("bascket-row")) {             
 
                     indexBasketRow = parentEl.index(".bascket-row");
-
-                    // console.log(indexBasketRow + "   " + parentEl.attr("class"));
 
                     break;
 
@@ -248,26 +245,53 @@ $(document).ready(function() {
             priceMultiple = priceGood * countElementsVal;
             $(".bascket-row:eq("+ indexBasketRow + ") .price_multipple").val(priceMultiple);
 
-            // setTimeout(function() {
+            getTotalPRice();
 
-                getTotalPRice();
+        });
 
-                // totalPrice = 0;
+        $(".bascket-sect .choise-count .count-num-val").keyup(function() {
 
-                // for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
+            parentEl = $(this).parent();
 
-                //     if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
+            for(;;) {
 
-                //         priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
+                parentEl = parentEl.parent();
 
-                //         totalPrice += priceMultipleVal;
-                //         $(".price_total_sum").val(totalPrice);
+                if(parentEl.hasClass("bascket-row")) {             
 
-                //     }
+                    indexBasketRow = parentEl.index(".bascket-row");
 
-                // }
+                    break;
 
-            // }, 400);
+                }
+
+            }
+
+            countElementsVal = $(".bascket-row:eq("+ indexBasketRow + ") .count-num .count-num-val").val();
+
+            if( countElementsVal <=  -1 ) {
+
+                $(".choise-count:eq("+ countElementsInputIndex +") .count-num .count-num-val").val(0);
+
+            }
+
+            if( $(this).hasClass("minus") && countElementsVal > 0 ) {
+
+                countElementsVal--;
+
+            } else if( $(this).hasClass("plus") ) {
+
+                countElementsVal++;
+
+            }
+
+            $(".bascket-row:eq("+ indexBasketRow + ") .count-num .count-num-val").val(countElementsVal);
+
+            priceGood = parseInt( $(".bascket-row:eq("+ indexBasketRow + ") .price_one_good").val() );
+            priceMultiple = priceGood * countElementsVal;
+            $(".bascket-row:eq("+ indexBasketRow + ") .price_multipple").val(priceMultiple);
+
+            getTotalPRice();
 
         });
 
@@ -283,8 +307,6 @@ $(document).ready(function() {
 
                     indexBasketRow = parentEl.index(".bascket-row");
 
-                    // console.log(indexBasketRow + "   " + parentEl.attr("class"));
-
                     break;
 
                 }
@@ -299,63 +321,16 @@ $(document).ready(function() {
 
             }, 500);
 
-            
 
             setTimeout(function() {
 
                 getTotalPRice();
-
-                // totalPrice = 0;
-
-                // for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
-
-                //     console.log(indexRow);
-
-                //     if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
-
-                //         priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
-
-                //         totalPrice += priceMultipleVal;
-                //         $(".price_total_sum").val(totalPrice);
-
-                //     }
-
-                // }
 
             }, 1000);
 
         });
 
      });
-
-     function getTotalPRice() {
-
-        totalPrice = 0;
-
-        if( !$(".bascket-table .price_multipple").length ) {
-
-            totalPrice = 0;
-
-        } else {
-
-            for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
-
-                if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
-
-                    priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
-
-                    totalPrice += priceMultipleVal;
-                    
-
-                }
-
-            }
-
-        }
-
-        $(".price_total_sum").val(totalPrice);
-
-     }
 
      // -----------------------------------------
 
@@ -495,6 +470,36 @@ $(document).ready(function() {
             $(this).outerWidth( $(this).outerHeight() );
 
         });
+     }
+
+     // ---------------
+
+    function getTotalPRice() {
+
+        totalPrice = 0;
+
+        if( !$(".bascket-table .price_multipple").length ) {
+
+            totalPrice = 0;
+
+        } else {
+
+            for( indexRow = 0; indexRow <= $(".bascket-table .price_multipple").length - 1; indexRow++ ) {
+
+                if( +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != 0 && $(".bascket-table .price_multipple:eq("+ indexRow +") ").val() != false) {
+
+                    priceMultipleVal = +$(".bascket-table .price_multipple:eq("+ indexRow +") ").val();            
+
+                    totalPrice += priceMultipleVal;                    
+
+                }
+
+            }
+
+        }
+
+        $(".price_total_sum").val(totalPrice);
+
      }
 
      // ---------------
