@@ -295,16 +295,17 @@
 
 	.popup .card-btns  .transparent-pill {
 	    margin: 5px;
-	    padding: 16px 1%;
+	    padding: 10px 1%;
 	}
 
 	.popup .card-btns a.white-pill,
 	.popup .card-btns button.white-pill {
-	    margin: 11px 5px 7px 5px;
+	    margin: 8px 5px 7px 5px;
 	}
 
 	.popup .card-btns .white-pill span {
-	    padding: 9px 1%;
+	    padding: 5px 1% 4px 1%;
+	    top: -4px;
 	}
 
     /*-- /Popups --*/
@@ -520,6 +521,10 @@
 	/*-- /Contacts --*/
 
 	/*-- Popups --*/
+
+	.popup {
+		padding: 12px 2.3%;
+	}
 
 	.popup h2 {
 		font-size: 38px;
