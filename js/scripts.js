@@ -8,10 +8,7 @@ $(document).ready(function() {
 
     // --------------------------
 
-    var movingImgWidth;
-    var minusDif;
-    var coorDimensionModule;
-    var imgLeftCoor;
+    var parentEl;
 
     // --------------------------
 
@@ -21,12 +18,28 @@ $(document).ready(function() {
 
     // ----------------------
 
+    var priceGood;
+    var countGoods;
+    var priceMultiple;
+    var indexBasketRow;
+    var indexRow;
+    var totalPrice = 0;
+    var priceMultipleVal = 0;
     var countElementsInputIndex;
     var countElementsVal;
 
     // ----------------------
 
     var dataAttr;
+
+    // ----------------------
+
+    var indexVideoBox;
+    var videoIdAttr;
+
+    // ----------------------
+
+    var noUiValueText;
 
     // ----------------------
 
@@ -77,41 +90,6 @@ $(document).ready(function() {
     });
 
 
-    // $(function() {
-
-    //     setTimeout(function() {
-
-    //         $(".shape-sect-box .moving_bg").fadeIn(700);
-
-    //         movingImgWidth = $(".shape-sect-box .moving_bg").width();
-    //         minusDif = movingImgWidth - bodyWidth;
-    //         coorDimensionModule = 1;
-    //         imgLeftCoor = 0;
-
-    //         setInterval(function() {
-
-    //             imgLeftCoor +=.3 * coorDimensionModule;
-
-    //             if( imgLeftCoor <= (-1 * minusDif )) {
-
-    //                 coorDimensionModule = 1;
-
-    //             } else if( imgLeftCoor >= 0) {
-
-    //                 coorDimensionModule = -1;
-
-    //             }
-
-    //             $(".shape-sect-box .moving_bg").css({
-    //                 "left" : imgLeftCoor + "px"
-    //             });
-
-    //         }, 35);
-
-    //     }, 1000);
-
-    // });
-
     // ----------------------------------------
 
     $(function() {
@@ -136,63 +114,19 @@ $(document).ready(function() {
 
     });
 
-    // $(function() {
-
-    //     var indexVideoBox;
-    //     var videoSrcPath;
-    //     var videoAttrId;
-
-    //     $(".video-box .play-video").click(function() {
-
-    //         parentEl = $(this).parent();
-
-    //         for(;;) {
-
-    //             parentEl = parentEl.parent();
-
-    //             if(parentEl.hasClass("video-box")) {
-
-    //                 indexVideoBox = parentEl.index(".video-box");
-
-    //                 break;
-
-    //             }
-
-    //         }
-
-    //         console.log(indexVideoBox);
-
-    //         $(".video-box:eq("+ indexVideoBox +") iframe").attr("id","video_" + indexVideoBox);
-
-    //         videoAttrId = $(".video-box:eq("+ indexVideoBox +") iframe").attr("id");
-
-    //         videoSrcPath = $(".video-box:eq("+ indexVideoBox +") iframe").attr("src");
-
-    //         $(".video-box:eq("+ indexVideoBox +") .hover-block").fadeOut(500);
-
-    //         $(".video-box:eq("+ indexVideoBox +") iframe").attr("src",  videoSrcPath + "&enablejsapi=1");
-
-    //         // videoId.playVideo();
-
-    //         // $(".video-box:eq("+ indexVideoBox +") iframe").attr("src", videoSrcPath + "&autoplay=1");
-
-    //     });
-
-    // });
-
      // ----------------------------------------
 
      // Калькулятор на странице Корзины товара
 
      $(function() {
 
-        var priceGood;
-        var countGoods;
-        var priceMultiple;
-        var indexBasketRow;
-        var indexRow;
-        var totalPrice = 0;
-        var priceMultipleVal = 0;
+        // var priceGood;
+        // var countGoods;
+        // var priceMultiple;
+        // var indexBasketRow;
+        // var indexRow;
+        totalPrice = 0;
+        priceMultipleVal = 0;
 
         $(".bascket-sect .choise-count button").click(function(countGoodsEvent) {
 
@@ -327,10 +261,10 @@ $(document).ready(function() {
 
      // -----------------------------------------
 
-    $(document).ready(function() {
+    $(function() {
 
-        var indexVideoBox;
-        var videoIdAttr;
+        // var indexVideoBox;
+        // var videoIdAttr;
 
         $(".play-video").on("click", function(playBtnEvent) {
 
@@ -367,7 +301,7 @@ $(document).ready(function() {
 
      $(function() {
 
-        var noUiValueText;
+        // var noUiValueText;
 
         $(".noUi-value").each(function() {
 
