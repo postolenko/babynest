@@ -75,7 +75,7 @@
 				<div class="col col-3">
 				
 					<a class="tel-link" href="tel:+79162612195">+7 (916) 261-21-95</a>
-					<button type="button" class="call-back-btn">Обратный звонок</button>
+					<button type="button" class="call-back-btn show_popup" data-popup = "callback_popup">Обратный звонок</button>
 
 				</div>
 
@@ -99,6 +99,54 @@
 	</header>
 
 	<!-- /Header -->
+
+	<!-- Popups -->
+
+	<div class="popups-section">
+		<div class="popup-bg"></div>
+		<div class="popup-block" data-popup-name="callback_popup">
+			<div class="center-block">
+				<div class="popup scroll">
+
+					<h2>Перезвонить?</h2>
+
+					<h3>Ваши данные:</h3>
+
+					<div class="input-field">
+						<input type="text" placeholder="ФИО">
+					</div>
+
+					<div class="input-field">
+						<input type="tel" placeholder="Телефон">
+					</div>
+
+					<div class="radio_btns-block">
+						
+						<h3>Желательное время звонка:</h3>
+
+						<div class="radio-box">									
+							<input type="radio" name="delivery_method_1" id="callback_popup_radio_1">
+							<label for="callback_popup_radio_1">В певрвой половине дня</label>
+						</div>
+
+						<div class="radio-box">								
+							<input type="radio" name="delivery_method_1" id="callback_popup_radio_2" checked>
+							<label for="callback_popup_radio_2">Во второй</label>
+						</div>
+
+					</div>
+
+					<div class="card-btns z-2">
+						<a href="#" class="transparent-pill">Отмена</a>
+						<a href="#" class="white-pill"><span>Отправить</span></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popups -->
 
 		<!-- Content -->
 			<div class="content">
