@@ -156,7 +156,7 @@ $(document).ready(function() {
 			$("select").select2();
 
 			$(".feedback_slider_2").not('.slick-initialized').slick({
-				ots: true,
+				dots: true,
 				arrows: false,
 				speed: 800,
 				slidesToShow: 3,
