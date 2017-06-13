@@ -48,7 +48,7 @@
 				
 				<div class="col col-1">
 
-					<a href="#" class="logo">
+					<a href="#" class="logo wow zoomIn">
 						<img src="img/logo.png" alt="">
 					</a>
 
@@ -56,12 +56,20 @@
 
 				<div class="col col-2">
 				
-					<div class="main-nav-block">
+					<div class="main-nav-block scroll">
 						<ul class="main-nav">
 							<li><a href="#">Каталог</a></li>
 							<li><a href="#">Блог</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
+					</div>
+
+					<div class="respmenubtn-box">									
+						<button class="respmenubtn">							
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 					</div>
 
 				</div>
@@ -94,54 +102,56 @@
 
 	<!-- /Header -->
 
+	<!-- Popups -->
 
-		<!-- Popups -->
+	<div class="popups-section">
+		<div class="popup-bg"></div>
+		<div class="popup-block offset-ziro" data-popup-name="callback_popup">
+			<div class="center-block">
 
-		<div class="popups-section">
-			<div class="popup-bg"></div>
-			<div class="popup-block" data-popup-name="callback_popup">
-				<div class="center-block">
-					<div class="popup scroll">
+				<button type="button" class="close-popup"></button>
 
-						<h2>Перезвонить?</h2>
+				<div class="popup scroll">
 
-						<h3>Ваши данные:</h3>
+					<h2>Перезвонить?</h2>
 
-						<div class="input-field">
-							<input type="text" placeholder="ФИО">
+					<h3>Ваши данные:</h3>
+
+					<div class="input-field">
+						<input type="text" placeholder="ФИО">
+					</div>
+
+					<div class="input-field">
+						<input type="tel" placeholder="Телефон">
+					</div>
+
+					<div class="radio_btns-block">
+						
+						<h3>Желательное время звонка:</h3>
+
+						<div class="radio-box">									
+							<input type="radio" name="delivery_method_1" id="callback_popup_radio_1">
+							<label for="callback_popup_radio_1">В певрвой половине дня</label>
 						</div>
 
-						<div class="input-field">
-							<input type="tel" placeholder="Телефон">
-						</div>
-
-						<div class="radio_btns-block">
-							
-							<h3>Желательное время звонка:</h3>
-
-							<div class="radio-box">									
-								<input type="radio" name="delivery_method_1" id="callback_popup_radio_1">
-								<label for="callback_popup_radio_1">В певрвой половине дня</label>
-							</div>
-
-							<div class="radio-box">								
-								<input type="radio" name="delivery_method_1" id="callback_popup_radio_2" checked>
-								<label for="callback_popup_radio_2">Во второй</label>
-							</div>
-
-						</div>
-
-						<div class="card-btns z-2">
-							<a href="#" class="transparent-pill">Отмена</a>
-							<a href="#" class="white-pill"><span>Отправить</span></a>
+						<div class="radio-box">								
+							<input type="radio" name="delivery_method_1" id="callback_popup_radio_2" checked>
+							<label for="callback_popup_radio_2">Во второй</label>
 						</div>
 
 					</div>
+
+					<div class="card-btns z-2">
+						<a href="#" class="transparent-pill">Отмена</a>
+						<a href="#" class="white-pill"><span>Отправить</span></a>
+					</div>
+
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- /Popups -->
+	<!-- /Popups -->
 
 
 		<!-- Content -->
@@ -308,96 +318,7 @@
 
 		<script src="js/scripts.js"></script>
 
-
-		<script>
-
-			(function($){
-
-				$(window).on("load",function(){
-
-					$(".scroll").mCustomScrollbar();
-
-				});
-
-			})(jQuery);	
-			
-			// $(".main-slider").slick({
-			//   dots: false,
-			//   speed: 700,
-			//   slidesToShow: 3,
-			//   arrows: false,
-			//   centerMode: true
-			//   // fade: true,
-			//   // autoplay: true,
-			//   // autoplaySpeed: 3000
-			// });
-
-			var mySwiper = new Swiper ('.swiper-container', {
-				loop: true,
-				pagination: $(".swiper-pagination"),
-				paginationClickable: true,
-				effect: 'coverflow',
-				grabCursor: true,
-				centeredSlides: true,
-				slidesPerView: 'auto',
-				coverflow: {
-					rotate: 0,
-					stretch: 0,
-					depth: 135,
-					modifier: 1,
-					slideShadows : true
-				}
-			});
-
-			$(".cart-slider").not('.slick-initialized').slick({
-				dots: true,
-				arrows: false,
-				speed: 700,
-				slidesToShow: 1,
-				fade: true,
-				autoplay: true,
-				autoplaySpeed: 17000,
-				appendDots: $(".cart-slider-pagination"),
-				zIndex: 1
-			});
-
-			$(".good-slider").not('.slick-initialized').slick({
-				dots: true,
-				arrows: false,
-				speed: 700,
-				slidesToShow: 1,
-				fade: true,
-				autoplay: true,
-				autoplaySpeed: 17000,
-				appendDots: $(".good-slider-pagination"),
-				zIndex: 1
-			});
-
-			$(".card-promo-slider").not('.slick-initialized').slick({
-		      dots: true,
-		      arrows: false,
-		      speed: 700,
-		      slidesToShow: 1,
-		      fade: true,
-		      autoplay: true,
-		      autoplaySpeed: 17000,
-		      appendDots: $(".card-promo-pagination"),
-		      zIndex: 1
-		    });
-
-			$("select").select2();
-
-			$(".feedback_slider_2").not('.slick-initialized').slick({
-				dots: true,
-				arrows: false,
-				speed: 800,
-				slidesToShow: 3,
-				slidesToScroll: 2,
-				autoplay: true,
-				autoplaySpeed: 7000
-			});
-
-		</script>
+		<script src="js/additional_scripts.js"></script>
 	
 	</div>
 

@@ -385,77 +385,8 @@
 
 		<script src="js/scripts.js"></script>
 
-		<script>
-
-		$(document).ready(function() {
-
-			 var mySwiper = new Swiper ('.swiper-container', {
-			    loop: true,
-			    pagination: $(".swiper-pagination"),
-			    paginationClickable: true,
-			    effect: 'coverflow',
-		        grabCursor: true,
-		        centeredSlides: true,
-		        slidesPerView: 'auto',
-		        coverflow: {
-		            rotate: 0,
-		            stretch: 0,
-		            depth: 135,
-		            modifier: 1,
-		            slideShadows : true
-		        }
-			  });
-
-			if($("#age_range_sl").length > 0) {
-
-				var ageRange = document.getElementById('age_range_sl');
-
-				noUiSlider.create(ageRange, {
-					start: [2, 6],
-					connect: true,
-					behaviour: 'tap-drag',
-					step: .5,
-					range: {
-						'min': 0,
-						'max': 8
-					},
-					pips: {
-						mode: 'steps',
-						stepped: true,
-						density: 1
-					}
-				});
-
-			}
-
-			$(".mosaik-thumbnails").isotope({
-			  itemSelector: ".thumbnail",
-			  // layoutMode: 'fitRows',
-			  percentPosition: true,
-			  masonry: {
-				  // columnWidth: 370,
-				  // gutter: 15,
-				  horizontalOrder: true,
-				  columnWidth: '.grid-sizer'
-				}
-			});
-
-			$(".blog-slider").not('.slick-initialized').slick({
-		      dots: true,
-		      arrows: false,
-		      speed: 700,
-		      slidesToShow: 1,
-		      fade: true,
-		      autoplay: true,
-		      autoplaySpeed: 17000,
-		      appendDots: $(".blog-slider-pagination"),
-		      zIndex: 1
-		    });
-
-		});
-
-		</script>
-	
+		<script src="js/additional_scripts.js"></script>
+		
 	</div>
 
 </body>
