@@ -392,7 +392,7 @@ $(document).ready(function() {
 
         });
 
-        $(".popup-bg, .close-popup").click(function() {
+        $(".popup-bg, .close-popup, .close_popup_cansel").click(function() {
             hidePopup();
         });
 
