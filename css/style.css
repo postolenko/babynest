@@ -1353,6 +1353,15 @@ select {
     padding: 3px 0;
 }
 
+.main-slider .promo-block .slide img.desktop-img {
+    display: block;
+}
+
+.main-slider .promo-block .slide img.resp-img {
+    display: none;
+}
+
+
 /*-- /Section 2 Main Page --*/
 
 /*-- Section 3 Main Page --*/
