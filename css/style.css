@@ -240,6 +240,47 @@ p {
     padding: 12px 0;
 }
 
+a {
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #fb6a4f;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+a:link,
+a:visited {
+    color: #fb6a4f;
+}
+
+a.active,
+a:active {
+    color: #92cdd3;
+}
+
+a:hover {
+    color: #92cdd3;
+}
+
 p.date {
     font-weight: bold;
 }
@@ -1072,38 +1113,45 @@ select {
     position: relative;
     top: -7px;
     background: rgba(255, 255, 255, 1);
+    font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fb6a4f;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     border-radius: 8px;
 
-    -webkit-transition-property: background;
+    -webkit-transition-property: background, color;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background;
+    -moz-transition-property: background, color;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background;
+    -ms-transition-property: background, color;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background;
+    -o-transition-property: background, color;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background;
+    transition-property: background, color;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
 
 .white-pill:hover span {
+    color: #ffffff;
     background: rgba(145, 205, 213, 1);
 }
 
 .white-pill:active span {
+    color: #ffffff;
     top: -2px;
 }
 
@@ -1353,11 +1401,11 @@ select {
     padding: 3px 0;
 }
 
-.main-slider .promo-block .slide img.desktop-img {
+.main-slider .promo-block.slide .desktop-img {
     display: block;
 }
 
-.main-slider .promo-block .slide img.resp-img {
+.main-slider .promo-block.slide .resp-img {
     display: none;
 }
 

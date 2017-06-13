@@ -487,12 +487,12 @@
 	    line-height: 34px;
 	}
 
-	.main-slider .promo-block .slide img.desktop-img {
-		display: none !important;
+	.main-slider .promo-block.slide .desktop-img {
+		display: none;
 	}
 
-	.main-slider .promo-block .slide img.resp-img {
-		display: block !important;
+	.main-slider .promo-block.slide .resp-img {
+		display: block;
 	}
 
 	/*-- /Section 2 Main Page --*/
