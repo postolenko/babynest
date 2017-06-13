@@ -40,7 +40,6 @@ $(document).ready(function() {
 		speed: 800,
 		slidesToShow: 3,
 		slidesToScroll: 2,
-		centerMode: true,
 		autoplay: true,
 		autoplaySpeed: 7000,
 		 responsive: [
@@ -54,7 +53,6 @@ $(document).ready(function() {
 		    {
 		      breakpoint: 480,
 		      settings: {
-		      	centerMode: false,
 		        slidesToShow: 1,
 		        slidesToScroll: 1
 		      }
