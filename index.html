@@ -10,10 +10,11 @@
 	<meta name="description" content="">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="vendors/css/swiper.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-	<link rel="stylesheet" href="vendors/css/swiper.css">	
+	<!-- <link rel="stylesheet" href="vendors/css/swiper.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">	
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" href="vendors/css/select2.css" >
@@ -53,12 +54,20 @@
 
 				<div class="col col-2">
 				
-					<div class="main-nav-block">
+					<div class="main-nav-block scroll">
 						<ul class="main-nav">
 							<li><a href="#">Каталог</a></li>
 							<li><a href="#">Блог</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
+					</div>
+
+					<div class="respmenubtn-box">									
+						<button class="respmenubtn">							
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 					</div>
 
 				</div>
@@ -99,7 +108,6 @@
 				<section class="promo-sect padding-ziro">
 					
 					<div class="shape-sect-box">
-						<!-- <img src="img/shape_sect.png" alt="" class="moving_bg" /> -->
 						<div class="moving_bg"></div>
 					</div>
 
@@ -203,15 +211,9 @@
 
 						</div>
 
-						<div class="swiper-pagination"></div>
+						<div class="swiper-pagination row"></div>
 
 					</div>
-
-					<!-- <div class="align-center" style="overflow: hidden;">
-
-						<img src="img/main_slider.jpg" alt="" style="display: inline-block; width: auto; margin: 0 0 0 -130px;">
-
-					</div> -->
 
 				</section>
 
@@ -270,120 +272,6 @@
 				<section class="feedback-sect">
 
 					<div class="row">
-
-						<!-- <div class="thumbnails testimonials-thumbnails offset-ziro">
-
-							<div class="thumbnail">
-
-								<div class="inner">
-									<div class="header-testimonials">
-										<div class="col col-1">
-											<div class="author-photo-box">
-												<img src="img/testimonials/author_photo_01.jpg" alt="" />
-											</div>
-
-											<p class="p-1">Star-Body</p>
-
-										</div>
-										<div class="col col-2">
-											<a class="subscribe-link" href="#">Подписаться</a>
-										</div>
-									</div>
-
-									<div class="photo-th-box">
-										<img src="img/testimonials/photo_01.jpg" alt="" />
-									</div>
-
-									<div class="thumbnail-content">
-
-										<div class="count-likes-block">
-											<p><i class="fa fa-heart-o" aria-hidden="true"></i> 97 это нравиться</p>
-										</div>
-
-										<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
-
-										<p>Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</p>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="thumbnail">
-
-								<div class="inner">
-									<div class="header-testimonials">
-										<div class="col col-1">
-											<div class="author-photo-box">
-												<img src="img/testimonials/author_photo_01.jpg" alt="" />
-											</div>
-
-											<p class="p-1">Star-Body</p>
-
-										</div>
-										<div class="col col-2">
-											<a class="subscribe-link" href="#">Подписаться</a>
-										</div>
-									</div>
-
-									<div class="photo-th-box">
-										<img src="img/testimonials/photo_02.jpg" alt="" />
-									</div>
-
-									<div class="thumbnail-content">
-
-										<div class="count-likes-block">
-											<p><i class="fa fa-heart-o" aria-hidden="true"></i> 97 это нравиться</p>
-										</div>
-
-										<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</p>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="thumbnail">
-
-								<div class="inner">
-									<div class="header-testimonials">
-										<div class="col col-1">
-											<div class="author-photo-box">
-												<img src="img/testimonials/author_photo_01.jpg" alt="" />
-											</div>
-
-											<p class="p-1">Star-Body</p>
-
-										</div>
-										<div class="col col-2">
-											<a class="subscribe-link" href="#">Подписаться</a>
-										</div>
-									</div>
-
-									<div class="photo-th-box">
-										<img src="img/testimonials/photo_01.jpg" alt="" />
-									</div>
-
-									<div class="thumbnail-content">
-
-										<div class="count-likes-block">
-											<p><i class="fa fa-heart-o" aria-hidden="true"></i> 97 это нравиться</p>
-										</div>
-
-										<p>Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</p>
-
-										<p>Текстами рефератов можно пользоваться совершенно бесплатно, однако при транслировании и предоставлении текстов в массовое пользование ссылка на Яндекс.Рефераты обязательна.</p>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
- -->
 
  						<div class="feedback_slider-block">
 
@@ -534,22 +422,20 @@
 		<script src="js/scripts.js"></script>
 
 		<script>
-			
-			// $(".main-slider").slick({
-			//   dots: false,
-			//   speed: 700,
-			//   slidesToShow: 3,
-			//   arrows: false,
-			//   centerMode: true
-			//   // fade: true,
-			//   // autoplay: true,
-			//   // autoplaySpeed: 3000
-			// });
 
-			 var mySwiper = new Swiper ('.swiper-container', {
+			(function($){
+
+				$(window).on("load",function(){
+
+					$(".scroll").mCustomScrollbar();
+
+				});
+
+			})(jQuery);	
+
+			 var mySwiper = new Swiper('.swiper-container', {
 			    loop: true,
 			    speed: 1400,
-			    // spaceBetween: -200,
 			    pagination: $(".swiper-pagination"),
 			    paginationClickable: true,
 			    effect: 'coverflow',
@@ -572,7 +458,23 @@
 				slidesToShow: 3,
 				slidesToScroll: 2,
 				autoplay: true,
-				autoplaySpeed: 7000
+				autoplaySpeed: 7000,
+				 responsive: [
+				    {
+				      breakpoint: 1200,
+				      settings: {
+				        slidesToShow: 2,
+				        slidesToScroll: 1
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1
+				      }
+				    }
+				  ]
 			});
 
 		</script>

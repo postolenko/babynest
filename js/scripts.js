@@ -38,6 +38,8 @@ $(document).ready(function() {
 
     getContactCircleSize();
 
+    getPaddingTopWrapper();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -53,6 +55,8 @@ $(document).ready(function() {
         getBootomPaddingForUseDescripts();
 
         getContactCircleSize();
+
+        getPaddingTopWrapper();
 
     });
 
@@ -395,6 +399,35 @@ $(document).ready(function() {
 
      // -----------------------------------------
 
+    $(function() {
+
+        $(".respmenubtn").click(function() {
+
+            if( $(".main-nav-block").is(":hidden") ) {
+
+                $(".main-nav-block").fadeIn(500);
+
+                $(".main-nav-block").css({
+                    "top" : $(".header").outerHeight() + "px",
+                    "height" : $(window).height() - $(".header").height() + "px"
+                });
+
+                $(this).addClass("active");
+
+            } else {
+
+                $(".main-nav-block").fadeOut(500);
+
+                $(this).removeClass("active");
+
+            }
+
+        });
+
+    });
+
+     // -----------------------------------------
+
      $(function() {
 
         // var dataAttr;
@@ -511,6 +544,24 @@ $(document).ready(function() {
 
         $(".price_total_sum").val(totalPrice);
 
+     }
+
+
+     function getPaddingTopWrapper() {
+
+        if( bodyWidth <= 768 ) {
+
+            $(".wrapper").css({
+                "padding-top" : $(".header").height() + "px"
+            });
+
+        } else {
+
+            $(".wrapper").css({
+                "padding-top" : 0 + "px"
+            });
+
+        }
      }
 
 });

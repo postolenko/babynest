@@ -590,8 +590,9 @@ button.swiper-pagination-bullet {
 }
 
 .main-slider-box .swiper-pagination-bullets {
-  bottom: 137px;
-  left: 0px;
+  position: relative;
+  bottom: 123px;
+  left: -56px;
   width: 100%;
   max-width: 1180px;
   text-align: right;

@@ -503,6 +503,8 @@ select {
 .header {
     background: rgba(255, 255, 255, 1);
     padding: 15px 0 25px 0;
+    position: relative;
+    z-index: 12;
 }
 
 .header .col {
@@ -532,7 +534,7 @@ select {
 
 }
 
-.header .col .logo {
+.logo {
     display: block;
     width: 100%;
     max-width: 170px;
@@ -540,7 +542,7 @@ select {
     top: 3px;
 }
 
-.logo-box .logo img {
+.logo img {
     display: block;
     width: 100%;
     height: auto;
@@ -777,6 +779,115 @@ select {
     background-position: center;
 }
 
+
+/* ----- Responsive Menu Button ------ */
+
+.respmenubtn-box {
+    display: none;
+    width: 44%;
+    text-align: center;
+    position: relative;
+    z-index: 11;
+}
+
+.respmenubtn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 37px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    z-index: 8;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.respmenubtn span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    border: 1px solid #fb6a4f;
+    background: rgba(251, 106, 79, 1);
+    margin: 0 0 5px 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+
+    -webkit-transition-property: transform, border, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform, border, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform, border, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform, border, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform, border, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.respmenubtn span:last-child {
+    margin: 0;
+}
+
+.respmenubtn:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*.respmenubtn.active {
+    position: fixed;
+    top: 3px;
+    left: 2%;
+}
+*/
+.respmenubtn:hover span {
+    border: 1px solid #92cdd3;
+    background: rgba(146, 205, 211, 1);
+}
+
+.respmenubtn.active span {
+    position: relative;
+    top: -1px;
+    border: 1px solid #fb6a4f;
+    background: rgba(251, 106, 79, 1);
+}
+
+.respmenubtn.active span:last-child {
+    display: none;
+}
+
+.respmenubtn.active span:first-child {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 3px 0 0 0;
+    position: relative;
+    top: 3px;
+}
+
+.respmenubtn.active span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* ----- / Responsive Menu Button ------ */
+
+
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
@@ -789,7 +900,8 @@ select {
 }
 
 .shape-sect-box {
-    height: 415px;
+    /*height: 415px;*/
+    height: 90%;
     width: 100%;
     overflow: hidden;
     position: absolute;
@@ -800,7 +912,7 @@ select {
 .moving_bg {
     /*display: none;*/
     display: block;
-    height: 415px;
+    height: 100%;
     width: 110%;
     position: absolute;
     top: 0;
@@ -808,9 +920,6 @@ select {
     background-image: url(../img/shape_sect.png);
     background-repeat: no-repeat;
     background-size: 100%;
-}
-
-.moving_bg {
     -webkit-animation: horizontal_float 18s infinite;
     -moz-animation:    horizontal_float 18s infinite;
     -o-animation:      horizontal_float 18s infinite;
@@ -888,7 +997,7 @@ select {
 
 .h1-descript {
     display: block;
-    width: 432px;
+    max-width: 432px;
     font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -1267,6 +1376,7 @@ select {
     display: block;
     width: 100%;
     height: 250px;
+    overflow: hidden;
     margin: 2px 0 19px 0;
 }
 
@@ -1380,12 +1490,14 @@ select {
     display: inline-block;
     vertical-align: top;
     width: auto;
-    margin: 30px 4px;
+    max-width: 380px;
+    margin: 30px 5px;
 }
 
 .feedback_slider .slide img {
     display: block;
-    max-width: 380px;
+    /*max-width: 380px;*/
+    width: 100%;
     height: auto;
     -webkit-box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, .4);
     -moz-box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, .4);
@@ -1405,198 +1517,6 @@ select {
     border: 5px solid #ee3a51;
     background: transparent;
 }
-
-
-/*
-.testimonials-thumbnails {
-
-}
-
-.testimonials-thumbnails .thumbnail {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.33%;
-    padding: 10px;
-}
-
-.testimonials-thumbnails .thumbnail .inner {
-    padding: 5px 0;
-    background: rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, .4);
-    -moz-box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, .4);
-    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, .4);
-}
-
-.header-testimonials {
-    padding: 15px 5% 19px 5%;
-}
-
-.header-testimonials .col {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-testimonials .col-1 {
-    width: 50%;
-}
-
-.header-testimonials .col-2 {
-    width: 50%;
-    text-align: right;
-}
-
-.author-photo-box {
-    display: inline-block;
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-    margin: 0 5% 0 0;
-}
-
-.author-photo-box img {
-    display: block;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.header-testimonials .p-1 {
-    display: inline-block;
-    vertical-align: middle;
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    color: #000000;
-}
-
-.subscribe-link {
-    display: inline-block;
-    vertical-align: middle;
-    background: rgba(56, 151, 240, 0);
-    width: 100px;
-    padding: 3px 1%;
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: normal;
-    color: #3897f0;
-    text-align: center;
-    border: 1px solid #3897f0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-
-    -webkit-transition-property: color, background;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: color, background;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: color, background;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: color, background;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: color, background;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-
-.subscribe-link:link,
-.subscribe-link:visited {
-    background: rgba(56, 151, 240, 0);
-    color: #3897f0;
-}
-
-.subscribe-link.active,
-.subscribe-link:active {
-    background: rgba(56, 151, 240, 1);
-    color: #ffffff;
-}
-
-.subscribe-link:hover {
-    background: rgba(56, 151, 240, 1);
-    color: #ffffff;
-}
-
-.testimonials-thumbnails .photo-th-box {
-    display: block;
-    width: 100%;
-    height: 190px;
-    overflow: hidden;
-}
-
-.testimonials-thumbnails .photo-th-box img {
-    display: block;
-    min-width: 100%;
-    min-height: 100%;
-
-    -webkit-transition-property: transform;
-    -webkit-transition-duration: 3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: transform;
-    -moz-transition-duration: 3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: transform;
-    -ms-transition-duration: 3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: transform;
-    -o-transition-duration: 3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: transform;
-    transition-duration: 3s;
-    transition-timing-function: ease;
-}
-
-.testimonials-thumbnails .inner:hover .photo-th-box img {
-    -webkit-transform: scale(1.09);
-    -moz-transform: scale(1.09);
-    -ms-transform: scale(1.09);
-    -o-transform: scale(1.09);
-    transform: scale(1.09);
-}
-
-.thumbnail-content {
-    padding: 0 5%;
-}
-
-.thumbnail-content .count-likes-block {
-    padding: 25px 0 0 0;
-}
-
-.thumbnail-content .count-likes-block p {
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #000000;
-    padding: 5px 0;
-}
-
-.thumbnail-content .count-likes-block p i {
-    font-size: 14px;
-    color: #000000;
-}
-
-.thumbnail-content p {
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #000000;
-    padding: 12px 0;
-}*/
 
 /*-- /Section 4 Main Page --*/
 

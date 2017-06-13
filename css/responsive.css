@@ -1,26 +1,495 @@
 @media only screen and (max-width: 1280px) {
 
+	/*-- Header --*/
 
+	.header .col-2 {
+	    width: 34%;
+	}
+
+	.header .col-3 {
+	    width: 39%;
+	}
+
+	/*-- /Header --*/
 
 }
 
 
 @media only screen and (max-width: 1024px) {
 
+	.row {
+		padding: 0 2%;
+	}
+
+	/*-- Header --*/
+
+	.header .col-1 {
+	    width: 13%;
+	}
+
+	.logo {
+	    max-width: 90px;
+	}
+
+	.header .col-2 {
+	    width: 38%;
+	    padding: 0 0 0 2%;
+	}
+
+	.header .col-3 {
+	    width: 39%;
+	    text-align: right;
+	}
+
+	.tel-link {
+	    margin: 5px 9px;
+	    font-size: 18px;
+	    line-height: 21px;
+	}
+
+	.main-nav {
+	    margin: 0;
+	}
+
+	.main-nav li {
+	    padding: 5px 9px;
+	}
+
+	.main-nav li {
+	    padding: 5px 9px;
+	}
+
+	.main-nav li a {
+	    font-size: 22px;
+	    line-height: 22px;
+	}
+
+	/*-- /Header --*/
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	/*-- Header --*/
+
+	.header {
+	    padding: 3px 0 10px 0;
+	}
+
+	.header .col-2 {
+	    width: 46%;
+	}
+
+	.header .col-3 {
+	    width: 29%;
+	}
+
+	.header .col-4 {
+	    width: 12%;
+	    text-align: right;
+	}
+
+	/*-- /Header --*/
 
 }
 
 
-@media only screen and (max-width: 737px) {
+@media only screen and (max-width: 768px) {
 
+	/*-- Header --*/
 
+	.wrapper {
+		padding-top: 84px;
+	}
+
+	.header {
+		display: block;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .2);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .2);
+		box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .2);
+	}
+
+	.header .col-1 {
+	    width: 19%;
+	}
+
+	.header .col-2 {
+	    width: 15%;
+	}
+
+	.header .col-3 {
+	    width: 51%;
+	}
+
+	.header .col-4 {
+	    width: 15%;
+	}
+
+	.respmenubtn-box {
+		display: inline-block;
+		vertical-align: bottom;
+		width: 100%;
+	}
+
+	.main-nav-block {
+		/*display: block;*/
+		display: none;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 12;
+		padding: 20px 2%;
+		background: rgba(255, 255, 255, .9);
+	}
+
+	.main-nav {
+		text-align: center;
+	}
+
+	.main-nav li {
+		display: block;
+		width: 100%;
+	}
+
+	.main-nav li a {
+		display: block;
+		font-size: 28px;
+		line-height: 30px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 Main Page --*/
+
+	.promo-sect {
+		padding-top: 113px;
+	}
+
+	h1 {
+	    font-size: 66px;
+	    line-height: 68px;
+	}
+
+	.h1-descript {
+	    max-width: 532px;
+	    font-size: 20px;
+	    line-height: 30px;
+	}
+
+	.white-pill {
+	    min-width: 190px;
+	    margin: 15px 0;
+	}
+
+	/*-- /Section 1 Main Page --*/
+
+	/*-- Section 2 Main Page --*/
+
+	.main-slider-box {
+	    height: 439px;
+	    width: 98%;
+	    margin: 0 auto;
+	}
+
+	.main-slider {
+	    height: 385px;
+	}
+
+	.main-slider .promo-block .promo-block-content {
+	    height: 325px;
+	}
+
+	.block-content {
+	    height: 345px;
+	}
+
+	.bottom-block {
+	    bottom: 20px;
+	    padding: 0 0 10px 3.5%;
+	}
+
+	.main-slider-box .swiper-slide-active {
+	    -webkit-box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.2);
+	    -moz-box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.2);
+	    box-shadow: 0px 10px 23px 0px rgba(0,0,0,0.2);
+	}
+
+	/*-- /Section 2 Main Page --*/
+
+	/*-- Section 3 Main Page --*/
+
+	.advantages-thumbnails .thumbnail {
+	    width: 50%;
+	    padding: 0 4% 15px 13px;
+	}
+
+	.advantages-thumbnails .icon-box img {
+		display: block;
+		height: auto;
+		width: 100%;
+		position: relative;
+		top: 0;
+		-webkit-animation: vertical_float_elem_two 3s infinite;
+		-moz-animation:    vertical_float_elem_two 3s infinite;
+		-o-animation:      vertical_float_elem_two 3s infinite;
+		animation:         vertical_float_elem_two 3s infinite;
+	}
+
+	.advantages-thumbnails .p-1 {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
+
+	.advantages-thumbnails .icon-box {
+	    overflow: hidden;
+	}
+
+	/*-- /Section 3 Main Page --*/
+
+	/*-- Contacts --*/
+
+	.contacts-thumbnails .thumbnail {
+		width: 50%;
+	}
+
+	.contacts-thumbnails {
+	    padding: 5px 0 4px 0;
+	}
+
+	.contacts-th-contacts .p-1 {
+	    font-size: 25px;
+	    line-height: 28px;
+	}
+
+	.contacts-thumbnails .thumbnail {
+	    padding: 20px 4% 25px 0;
+	}
+
+	/*-- /Contacts --*/
 
 }
 
+@media only screen and (max-width: 600px) {
 
+	h1 {
+	    font-size: 59px;
+	    line-height: 60px;
+	}
+
+	h2 {
+	    font-size: 43px;
+	    line-height: 53px;
+	}
+
+	/*-- Section 1 Main Page --*/
+
+	.promo-sect {
+		padding-top: 79px;
+	}
+
+	/*-- /Section 1 Main Page --*/
+
+	/*-- Section 2 Main Page --*/
+
+	.main-slider-box .swiper-pagination-bullets {
+		bottom: 87px;
+		left: -27px;
+	}
+
+	.main-slider-box span.swiper-pagination-bullet {
+	    width: 20px;
+	    height: 20px;
+	}
+
+    /*-- /Section 2 Main Page --*/
+
+	/*-- Contacts --*/
+
+/*	.contacts-thumbnails .thumbnail {
+		width: 50%;
+	}*/
+
+	/*-- /Contacts --*/
+
+	/*-- Footer --*/
+
+	.footer {
+	    padding: 0 0 5px 0;
+	}
+
+	.footer .bottom-row .col-1,
+	.footer .bottom-row .col-2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer p {
+		padding: 7px 0;
+	}
+
+	.footer .bottom-row .col {
+	    padding: 0 0 5px 0;
+	}
+
+	/*-- /Footer --*/
+
+}
 
 @media only screen and (max-width: 480px) {
 
+	h2 {
+	    font-size: 40px;
+	    line-height: 43px;
+	}
 
+	/*-- Header --*/
+
+	.header {
+	    padding: 2px 0 3px 0;
+	}
+
+	.header .col {
+		vertical-align: middle;
+	}
+
+	.header .col-1 {
+	    width: 23%;
+	    padding: 0 0 0 2%;
+	}
+
+	.header .col-3 {
+	    width: 48.5%;
+	}
+
+	.header .col-4 {
+	    width: 13.5%;
+	}
+
+	.tel-link {
+	    font-size: 13px;
+	    line-height: 13px;
+	}
+
+	.call-back-btn {
+	    margin: 5px 10px;
+	    padding: 4px 7px;
+	    font-size: 13px;
+	    line-height: 13px;
+	}
+
+	.bascket-icon {
+	    display: block;
+		width: 40px;
+		height: 34px;
+		position: relative;
+		top: -10px;
+	}	
+
+	.count-bascket-googds {
+	    top: 17px;
+	    z-index: 2;
+	}
+
+	.count-bascket-googds .inner-circle {
+	    top: -3px;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Section 1 Main Page --*/
+
+	.promo-block {
+		border: 12px solid #ffffff;
+	}
+
+	.main-slider .promo-block .promo-block-content {
+	    height: 361px;
+	}
+
+	.promo-block .promo-block-content .bottom-block {
+	    width: 100%;
+	    padding: 0 0 15px 3.5%;
+	}
+
+	.promo-block .bottom-block p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.main-slider p.good-price {
+	    font-size: 28px;
+	    line-height: 34px;
+	}
+
+	.main-slider-box .swiper-pagination-bullets {
+		bottom: 61px;
+		left: -10px;
+	}
+
+	.float-img-box {
+	    width: 315px;
+	    height: 268px;
+	    left: initial;
+	    top: 38%;
+	    right: 0;
+	    margin: initial;
+	}
+
+	/*-- /Section 1 Main Page --*/
+
+	/*-- Section 3 Main Page --*/
+
+	.advantages-thumbnails .thumbnail {
+	    width: 100%;
+	    padding: 0 1% 15px 1%;
+	}
+
+	.advantages-thumbnails .icon-box {
+	    height: 262px;
+	}
+
+	/*-- /Section 3 Main Page --*/
+
+	/*-- Section 4 Main Page --*/
+
+	.feedback-sect {
+	    padding: 5px 0 14px 0;
+	}
+
+	/*-- /Section 4 Main Page --*/
+
+	/*-- Contacts --*/
+
+	.contacts-thumbnails .thumbnail {
+		width: 100%;
+		padding: 10px 2%;
+		text-align: center;
+	}
+
+	/*-- /Contacts --*/
+
+
+}
+
+@media only screen and (min-width: 769px) {
+
+	.wrapper {
+		padding-top: 0;
+	}
+
+	/*-- Header --*/
+
+	.main-nav-block {
+		display: block !important;
+		height: auto !important;
+	}
+
+	/*-- /Header --*/
 
 }
