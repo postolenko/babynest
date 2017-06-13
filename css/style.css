@@ -3879,7 +3879,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 11;
+    z-index: 12;
 }
 
 /*.popups-section.scroll {
@@ -3909,6 +3909,14 @@ footer {
 }
 
 .popup-block:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    height: 100vh;
+    width: 1%;
+}
+
+.popup-block:before {
     display: inline-block;
     vertical-align: middle;
     content: "";

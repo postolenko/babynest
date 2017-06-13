@@ -273,6 +273,41 @@
 
 	/*-- /Contacts --*/
 
+	/*-- Popups --*/
+
+	.popup {
+	    padding: 16px 2.6%;
+	    border: 15px solid #ffffff;
+	}
+
+	.popup h2 {
+	    padding: 0 0 10px 0;
+	}
+
+	.popup .radio_btns-block {
+	    padding: 15px 0 10px 0;
+	}
+
+	.popup .card-btns {
+	    margin: 0 0 8px 0;
+	}
+
+	.popup .card-btns  .transparent-pill {
+	    margin: 5px;
+	    padding: 16px 1%;
+	}
+
+	.popup .card-btns a.white-pill,
+	.popup .card-btns button.white-pill {
+	    margin: 11px 5px 7px 5px;
+	}
+
+	.popup .card-btns .white-pill span {
+	    padding: 9px 1%;
+	}
+
+    /*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -483,6 +518,14 @@
 
 	/*-- /Contacts --*/
 
+	/*-- Popups --*/
+
+	.popup h2 {
+		font-size: 38px;
+		line-height: 42px;
+	}
+
+	/*-- /Popups --*/
 
 }
 
