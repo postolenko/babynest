@@ -113,6 +113,18 @@
 
 	/*-- /Section 1 Catalog Page --*/
 
+	/*-- Mosaik --*/
+
+	.grid-sizer {
+	    width: 49.6%;
+	}
+
+	.mosaik-thumbnails .thumbnail {
+	    width: 49.6%;
+    }
+
+	/*-- /Mosaik --*/
+
 }
 
 
@@ -310,6 +322,24 @@
 
 	/*-- /Section 1 Catalog Page --*/
 
+	/*-- Mosaik --*/
+
+	.mosaik-box {
+	    margin: 16px 0 26px 0;
+	}
+
+	.grid-sizer {
+	    width: 49.5%;
+	    min-width: 270px;
+	}
+
+	.mosaik-thumbnails .thumbnail {
+	    width: 49.5%;
+	    min-width: 270px;
+    }
+
+	/*-- /Mosaik --*/
+
 	/*-- Popups --*/
 
 	.popup {
@@ -395,6 +425,18 @@
 	}
 
     /*-- /Section 2 Main Page --*/
+
+    /*-- Mosaik --*/
+
+	.grid-sizer {
+	    width: 98%;
+	}
+
+	.mosaik-thumbnails .thumbnail {
+	    width: 98%;
+    }
+
+	/*-- /Mosaik --*/
 
 	/*-- Footer --*/
 
@@ -582,6 +624,17 @@
 	}
 
 	/*-- /Section 2 Catalog Page --*/
+
+	/*-- Mosaik --*/
+
+	.grid-sizer {
+	    width: 100%;	}
+
+	.mosaik-thumbnails .thumbnail {
+	    width: 100%;
+    }
+
+	/*-- /Mosaik --*/
 
 	/*-- Popups --*/
 
