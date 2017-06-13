@@ -10,10 +10,10 @@
 	<meta name="description" content="">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="vendors/css/swiper.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-	<link rel="stylesheet" href="vendors/css/swiper.css">	
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">	
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" href="vendors/css/select2.css" >
@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="vendors/js/swiper.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="vendors/js/placeholders.js"></script>
 	<script type="text/javascript" src="vendors/js/isotope-docs.min.js"></script>
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -47,7 +48,7 @@
 				
 				<div class="col col-1">
 
-					<a href="#" class="logo">
+					<a href="#" class="logo wow zoomIn">
 						<img src="img/logo.png" alt="">
 					</a>
 
@@ -55,7 +56,7 @@
 
 				<div class="col col-2">
 				
-					<div class="main-nav-block">
+					<div class="main-nav-block scroll">
 						<ul class="main-nav">
 							<li><a href="#">Каталог</a></li>
 							<li><a href="#">Блог</a></li>
@@ -63,12 +64,20 @@
 						</ul>
 					</div>
 
+					<div class="respmenubtn-box">									
+						<button class="respmenubtn">							
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+
 				</div>
 
 				<div class="col col-3">
 				
 					<a class="tel-link" href="tel:+79162612195">+7 (916) 261-21-95</a>
-					<button type="button" class="call-back-btn">Обратный звонок</button>
+					<button type="button" class="call-back-btn show_popup" data-popup = "callback_popup">Обратный звонок</button>
 
 				</div>
 
@@ -92,6 +101,57 @@
 	</header>
 
 	<!-- /Header -->
+
+	<!-- Popups -->
+
+	<div class="popups-section">
+		<div class="popup-bg"></div>
+		<div class="popup-block offset-ziro" data-popup-name="callback_popup">
+			<div class="center-block">
+
+				<button type="button" class="close-popup"></button>
+
+				<div class="popup scroll">
+
+					<h2>Перезвонить?</h2>
+
+					<h3>Ваши данные:</h3>
+
+					<div class="input-field">
+						<input type="text" placeholder="ФИО">
+					</div>
+
+					<div class="input-field">
+						<input type="tel" placeholder="Телефон">
+					</div>
+
+					<div class="radio_btns-block">
+						
+						<h3>Желательное время звонка:</h3>
+
+						<div class="radio-box">									
+							<input type="radio" name="delivery_method_1" id="callback_popup_radio_1">
+							<label for="callback_popup_radio_1">В певрвой половине дня</label>
+						</div>
+
+						<div class="radio-box">								
+							<input type="radio" name="delivery_method_1" id="callback_popup_radio_2" checked>
+							<label for="callback_popup_radio_2">Во второй</label>
+						</div>
+
+					</div>
+
+					<div class="card-btns z-2">
+						<a href="#" class="transparent-pill">Отмена</a>
+						<a href="#" class="white-pill"><span>Отправить</span></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /Popups -->
 
 		<!-- Content -->
 			<div class="content">
@@ -263,7 +323,8 @@
 							</div>
 
 							<div class="promo-block">
-								<img src="img/main_slider/slide_03.jpg" alt="" />
+								<img class="desktop-img" src="img/main_slider/slide_03.jpg" alt="" />
+								<img class="resp-img" src="img/main_slider/slide_03_resp.jpg" alt="" />
 								<div class="promo-block-content">
 									<h3>Гнездышко 27</h3>
 									<div class="bottom-block">
@@ -411,89 +472,7 @@
 		<!-- /Footer -->
 
 		<script src="js/scripts.js"></script>
-
-		<script>
-			
-			// $(".main-slider").slick({
-			//   dots: false,
-			//   speed: 700,
-			//   slidesToShow: 3,
-			//   arrows: false,
-			//   centerMode: true
-			//   // fade: true,
-			//   // autoplay: true,
-			//   // autoplaySpeed: 3000
-			// });
-
-			 var mySwiper = new Swiper ('.swiper-container', {
-			    loop: true,
-			    pagination: $(".swiper-pagination"),
-			    paginationClickable: true,
-			    effect: 'coverflow',
-		        grabCursor: true,
-		        centeredSlides: true,
-		        slidesPerView: 'auto',
-		        coverflow: {
-		            rotate: 0,
-		            stretch: 0,
-		            depth: 135,
-		            modifier: 1,
-		            slideShadows : true
-		        }
-			  });
-
-			if($("#age_range_sl").length > 0) {
-
-				var ageRange = document.getElementById('age_range_sl');
-				var maxAge = 8;
-				var nodes;
-
-				noUiSlider.create(ageRange, {
-					start: [1, 5],
-					connect: true,
-					behaviour: 'tap',
-					step: 1,
-					range: {
-						'min': 0,
-						'max': 6
-					},
-					pips: {
-						mode: 'steps',
-						stepped: true,
-						density: 1
-					}
-				});
-
-				nodes = [
-					document.getElementById('lower-value'),
-					document.getElementById('upper-value')
-				];
-
-				ageRange.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
-
-					nodes[handle].innerHTML = parseFloat( values[handle] );
-
-					// if( parseInt( $("#upper-value").text() ) > 4 && parseInt( $("#upper-value").text() ) <= 5 ) {
-
-					// 	$("#upper-value").text(6);
-
-					// } else if( parseInt( $("#upper-value").text() ) > 5 ) {
-
-					// 	$("#upper-value").text(maxAge);
-
-					// }
-
-					if( parseInt( $("#upper-value").text() ) > 4 && parseInt( $("#upper-value").text() ) <= 6 ) {
-
-						$("#upper-value").text(maxAge);
-
-					}
-
-				});
-
-			}
-
-		</script>
+		<script src="js/additional_scripts.js"></script>
 	
 	</div>
 

@@ -91,6 +91,28 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 Catalog Page --*/
+
+	.choise-block h2 {
+	    font-size: 64px;
+	    line-height: 65px;
+	}
+
+	.choise-form-block {
+	    margin: 15px 0;
+	}
+
+	.choise-form-block .checkbox-block {
+	    width: auto;
+	    margin: 20px 6px 10px 2px;
+	}
+
+	.range-slide-box {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 Catalog Page --*/
+
 }
 
 
@@ -234,18 +256,6 @@
 	    padding: 0 4% 15px 13px;
 	}
 
-	.advantages-thumbnails .icon-box img {
-		display: block;
-		height: auto;
-		width: 100%;
-		position: relative;
-		top: 0;
-		-webkit-animation: vertical_float_elem_two 3s infinite;
-		-moz-animation:    vertical_float_elem_two 3s infinite;
-		-o-animation:      vertical_float_elem_two 3s infinite;
-		animation:         vertical_float_elem_two 3s infinite;
-	}
-
 	.advantages-thumbnails .p-1 {
 	    font-size: 20px;
 	    line-height: 24px;
@@ -277,6 +287,28 @@
 	}
 
 	/*-- /Contacts --*/
+
+	/*-- Section 1 Catalog Page --*/
+
+	.choise-block {
+	    padding: 20px 3%;
+	    border: 15px solid #ffffff;
+	}
+
+	.choise-block h2 {
+	    font-size: 56px;
+	    line-height: 57px;
+	}
+
+	.good-thumbnail {
+	    margin: 5px 0 30px 0;
+	}
+
+	.goods-thumbnails .good-thumbnail {
+	    width: 50%;
+	}
+
+	/*-- /Section 1 Catalog Page --*/
 
 	/*-- Popups --*/
 
@@ -479,11 +511,11 @@
 	    line-height: 34px;
 	}
 
-	.main-slider .promo-block.slide .desktop-img {
+	.promo-block .desktop-img {
 		display: none;
 	}
 
-	.main-slider .promo-block.slide .resp-img {
+	.promo-block .resp-img {
 		display: block;
 	}
 
@@ -519,6 +551,37 @@
 	}
 
 	/*-- /Contacts --*/
+
+	/*-- Section 1 Catalog Page --*/
+
+	.choise-block h2 {
+	    font-size: 39px;
+	    line-height: 40px;
+	}
+
+	.noUi-value .text_val {
+		display: block;
+	    font-size: 13px !important;
+	    line-height: 14px !important;
+	}
+
+	.noUi-pips-horizontal {
+	    padding: 6px 0 10px 0 !important;
+	}
+
+	/*-- /Section 1 Catalog Page --*/
+
+	/*-- Section 2 Catalog Page --*/
+
+	.goods-thumbnails .good-thumbnail {
+	    width: 90%;
+	    display: block;
+	    margin: 20px auto;
+	    text-align: center;
+	    border-bottom: 1px solid #dfdfdf;
+	}
+
+	/*-- /Section 2 Catalog Page --*/
 
 	/*-- Popups --*/
 
