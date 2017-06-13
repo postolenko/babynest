@@ -340,6 +340,28 @@
 
 	/*-- /Mosaik --*/
 
+	/*-- Section 1 Blog Inner --*/
+
+	.blog-slider .slide {
+	    height: 380px;
+	    border: 15px solid #ffffff;
+	}
+
+	.blog-slider-pagination {
+	    bottom: 13px;
+	}
+
+	.blog-slider-pagination .slick-dots {
+		padding: 10px 0;
+	}
+
+	.slick-dots li {
+	    width: 20px;
+	    height: 20px;
+	}
+
+	/*-- /Section 1 Blog Inner --*/
+
 	/*-- Popups --*/
 
 	.popup {
@@ -463,6 +485,11 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+	h1 {
+	    font-size: 52px;
+	    line-height: 54px;
+	}
 
 	h2 {
 	    font-size: 40px;
@@ -635,6 +662,18 @@
     }
 
 	/*-- /Mosaik --*/
+
+	/*-- Section 1 Blog Inner --*/
+
+	.blog-slider img.desktop-img {
+	    display: none;
+	}
+
+	.blog-slider img.resp-img {
+	    display: block;
+	}
+
+	/*-- /Section 1 Blog Inner --*/
 
 	/*-- Popups --*/
 

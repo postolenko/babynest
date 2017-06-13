@@ -1862,6 +1862,14 @@ p.price {
     min-height: 100%;
 }
 
+.blog-slider img.desktop-img {
+    display: block;
+}
+
+.blog-slider img.resp-img {
+    display: none;
+}
+
 .blog-slider-pagination {
     position: absolute;
     bottom: 35px;
