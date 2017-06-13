@@ -458,7 +458,7 @@ $(document).ready(function() {
 
         });
 
-        $(".popup-bg").click(function() {
+        $(".popup-bg, .close-popup").click(function() {
             hidePopup();
         });
 

@@ -276,6 +276,7 @@
 	/*-- Popups --*/
 
 	.popup {
+		max-height: 94vh;
 	    padding: 16px 2.6%;
 	    border: 15px solid #ffffff;
 	}
