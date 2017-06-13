@@ -48,6 +48,22 @@ $(document).ready(function() {
 
         bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+        if( bodyWidth <= 768 ) {
+
+            $(".main-nav-block").css({
+                "top" : $(".header").outerHeight() + "px",
+                "height" : $(window).height() - $(".header").height() + "px"
+            });
+
+        } else {
+
+            $(".main-nav-block").css({
+                "top" : 0 + "px",
+                "height" : "auto"
+            });
+
+        }
+
         // ---------------------------------
 
         getPromoFloatBlockSize();
