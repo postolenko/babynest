@@ -12,6 +12,36 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 2 Good Page --*/
+
+	.use-descripts {
+	    padding: 0 80px 0 0;
+	}
+
+	/*-- /Section 2 Good Page --*/
+
+	/*-- Section 3 Good Page --*/
+
+	.video-box {
+	    width: 899px;
+	    height: 634px;
+	    margin: -35px auto 0 auto;
+	}
+
+	.video-box .inner {
+	    width: 550px;
+	    height: 393px;
+	    top: 83px;
+	    left: 280px;
+	}
+
+	.video-box iframe {
+	    width: 549px;
+	    height: 392px;
+	}
+
+	/*-- /Section 3 Good Page --*/
+
 }
 
 
@@ -121,6 +151,27 @@
 
 	/*-- /Section 2 Good Page --*/
 
+	/*-- Section 3 Good Page --*/
+
+	.video-box {
+	    width: 866px;
+	    height: 611px;
+	}
+
+	.video-box .inner {
+	    width: 498px;
+	    height: 350px;
+	    top: 101px;
+	    left: 280px;
+	}
+
+	.video-box iframe {
+	    width: 498px;
+	    height: 350px;
+	}
+
+	/*-- /Section 3 Good Page --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -179,6 +230,78 @@
     }
 
 	/*-- /Mosaik --*/
+
+	/*-- Section 3 Good Page --*/
+
+	.video-box {
+	    width: 705px;
+	    height: 494px;
+	}
+
+	.video-box .inner {
+	    width: 413px;
+	    height: 302px;
+	    top: 68px;
+	    left: 223px;
+	}
+
+	.video-box iframe {
+		width: 413px;
+		height: 301px;
+	}
+
+	/*-- /Section 3 Good Page --*/
+
+	/*-- Section 1 Bsket Page --*/
+
+	.bascket-header .cell-1,
+	.bascket-row .cell-1 {
+	    width: 17%;
+	}
+
+	.bascket-header .cell-2,
+	.bascket-row .cell-2 {
+	    width: 19%;
+	}
+
+	.bascket-header .cell-3,
+	.bascket-row .cell-3 {
+	    width: 15%;
+	}
+
+	.bascket-header .cell-4 ,
+	.bascket-row .cell-4 {
+	    width: 23%;
+	    padding: 0 1% 0 2%;
+	    text-align: right;
+	}
+
+	.bascket-header .cell-5,
+	.bascket-row .cell-5 {
+	    width: 15%;
+	}
+
+	.bascket-header .cell-6,
+	.bascket-row .cell-6 {
+	    width: 11%;
+	}
+
+	.bascket-row .cell-2 p {
+		font-size: 16px;
+		line-height: 17px;
+	}
+
+	.bascket-row .cell-3 p input {
+	   font-size: 26px;
+	    line-height: 29px;
+	}
+
+	.bascket-row .cell-5 p input {
+	   font-size: 26px;
+	    line-height: 29px;
+	}
+
+	/*-- .Section 1 Bsket Page --*/
 
 }
 
@@ -440,6 +563,83 @@
 	}
 
 	/*-- /Section 1 Good Page --*/
+
+	/*-- Section 3 Good Page --*/
+
+	.video-box {
+	    width: 100%;
+	    height: 360px;
+	    margin: 30px 0;
+	    background: none;
+	}
+
+	.video-box .inner {
+		width: 98%;
+		max-width: 446px;
+		height: 332px;
+	    margin: 0 auto;
+	    top: 0;
+	    left: 0;
+	}
+
+	.video-box iframe {
+		width: 98%;
+	    max-width: 446px;
+	    height: 332px;
+	}
+
+	/*-- /Section 3 Good Page --*/
+
+	/*-- Section 1 Bsket Page --*/
+
+	.good-card .good-card-item:nth-child(1) {
+	    border: 15px solid #ffffff;
+	}
+
+	.good-card .bascket-sect {
+	    padding: 26px 1% 30px 1%;
+	}
+
+	.choise-count {
+	    width: 100px;
+	}
+
+	.choise-count button[type="button"] {
+	    width: 22px;
+	}
+
+	.bascket-row.total-row .cell-1 {
+	    width: 71%;
+	}
+
+	.bascket-row.total-row .cell-2 {
+	    width: 18%;
+	}
+
+	.good-card .good-card-item {
+	    border: 15px solid #ffffff;
+	    padding: 26px 1% 18px 1%;
+	}
+
+	.form-box .col-1 {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.form-box .col-2 {
+	    width: 100%;
+	    padding: 14px 3% 0 0;
+	}
+
+	.radio_btns-block {
+	    padding: 0 0 12px 0;
+	}
+
+	.radio_btns-block h3 + .radio-box {
+	    margin: 13px 0 0 0;
+	}
+
+	/*-- .Section 1 Bsket Page --*/
 
 	/*-- Popups --*/
 

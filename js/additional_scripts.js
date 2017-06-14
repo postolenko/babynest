@@ -12,6 +12,12 @@ $(document).ready(function() {
 
 			$(".scroll").mCustomScrollbar();
 
+			$(".scroll-horisontal").mCustomScrollbar({
+
+				axis:"x"
+				
+			});
+
 		});
 
 	})(jQuery);	

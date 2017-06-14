@@ -2382,7 +2382,7 @@ p.price {
     padding: 0;
 }
 
-/*-- Section 2 Good Page --*/
+/*-- /Section 2 Good Page --*/
 
 /*-- Section 3 Good Page --*/
 
@@ -2544,6 +2544,10 @@ section.video-sect {
     padding: 5px 0;
 }
 
+.table-inner {
+    min-width: 540px;
+}
+
 .bascket-row {
     display: table;
     width: 100%;
@@ -2573,6 +2577,7 @@ section.video-sect {
 
 .bascket-row .cell-3 {
     width: 13%;
+    padding: 0 12px 0 1%;
     text-align: right;
 }
 
@@ -2583,6 +2588,7 @@ section.video-sect {
 
 .bascket-row .cell-5 {
     width: 11%;
+    padding: 0 12px 0 1%;
     text-align: right;
 }
 
@@ -2992,7 +2998,7 @@ section.video-sect {
     line-height: 24px;
     font-weight: bold;
     color: #ffffff;
-    padding: 6px 0 0 40px;
+    padding: 6px 40px 0 40px;
     position: relative;
 }
 
