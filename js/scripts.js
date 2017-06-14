@@ -376,6 +376,17 @@ $(document).ready(function() {
 
     });
 
+    // ------------------------------------------
+
+    $(function() {
+
+        $(".choise-radio-box label img").click(function() {
+
+            $(this).parent($("label")).click();
+
+        })
+    });
+
      // -----------------------------------------
 
      $(function() {
