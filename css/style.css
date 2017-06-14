@@ -231,10 +231,10 @@ h2 {
     color: #91cdd5;
 }
 
-h2 {
+h3 {
     font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
-    font-size: 54px;
-    line-height: 59px;
+    font-size: 30px;
+    line-height: 38px;
     font-weight: 900;
     color: #91cdd5;
 }
@@ -1478,6 +1478,130 @@ select {
 }
 
 /*-- /Section 4 Main Page --*/
+
+/*-- Section 5 Main Page --*/
+
+.contacts-sect {
+    background: rgba(255, 255, 255, 1);
+    padding: 40px 0 30px 0;
+}
+
+.contacts-thumbnails {
+    /*padding: 75px 0 69px 0;*/
+    padding: 30px 0;
+}
+
+.contacts-thumbnails .thumbnail {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 20px 6% 25px 0;
+}
+
+.city-coat-box {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0;
+}
+
+.city-coat-box img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.contacts-th-contacts .p-1 {
+    font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: bold;
+    color: #d75d34;
+    padding: 7px 0 5px 0;
+}
+
+.contacts-th-contacts p {
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #92adc3;
+    padding: 5px 0;
+}
+
+.contacts-th-contacts p a {
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #92adc3;
+    text-decoration: none;
+}
+
+.contacts-th-contacts p a:link,
+.contacts-th-contacts p a:visited {
+    text-decoration: none;
+}
+
+.contacts-th-contacts p a.active,
+.contacts-th-contacts p a:active {
+    text-decoration: underline;
+}
+
+.contacts-th-contacts p a:hover {
+    text-decoration: underline;
+}
+
+.contact-th-link {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #92adc3;
+    margin: 5px 0;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.contact-th-link:link,
+.contact-th-link:visited {
+    color: #92adc3;
+}
+
+.contact-th-link.active,
+.contact-th-link:active {
+    color: #d75d34;
+}
+
+.contact-th-link:hover {
+    color: #d75d34;
+}
+
+.contacts-th-contacts .call-back-btn {
+    margin: 9px 0;
+}
+
+/*-- /Section 5 Main Page --*/
+
 
 /*-- Section 1 Catalog Page --*/
 
@@ -3128,126 +3252,27 @@ footer {
 }
 
 .footer {
-    background: rgba(255, 255, 255, 1);
     padding: 0 0 25px 0;
-}
-
-.contacts-sect {
     background: rgba(255, 255, 255, 1);
-    padding: 40px 0 30px 0;
 }
 
-.contacts-thumbnails {
-    padding: 75px 0 69px 0;
-}
-
-.contacts-thumbnails .thumbnail {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.33%;
-    padding: 20px 6% 25px 0;
-}
-
-.city-coat-box {
-    display: inline-block;
-    vertical-align: top;
-    margin: 5px 5px 5px 0;
-}
-
-.city-coat-box img {
+.footer:before {
     display: block;
-    width: auto;
-    height: auto;
+    content: "";
+    width: 217px;
+    height: 133px;
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+    background-image: url(../img/footer_shape.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
-.contacts-th-contacts .p-1 {
-    font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
-    font-size: 30px;
-    line-height: 37px;
-    font-weight: bold;
-    color: #d75d34;
-    padding: 7px 0 5px 0;
-}
-
-.contacts-th-contacts p {
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #92adc3;
-    padding: 5px 0;
-}
-
-.contacts-th-contacts p a {
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    color: #92adc3;
-    text-decoration: none;
-}
-
-.contacts-th-contacts p a:link,
-.contacts-th-contacts p a:visited {
-    text-decoration: none;
-}
-
-.contacts-th-contacts p a.active,
-.contacts-th-contacts p a:active {
-    text-decoration: underline;
-}
-
-.contacts-th-contacts p a:hover {
-    text-decoration: underline;
-}
-
-.contact-th-link {
-    display: inline-block;
-    vertical-align: top;
-    font-family: "Roboto", Verdana, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-    color: #92adc3;
-    margin: 5px 0;
-
-    -webkit-transition-property: color;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: color;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: color;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: color;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: color;
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-
-.contact-th-link:link,
-.contact-th-link:visited {
-    color: #92adc3;
-}
-
-.contact-th-link.active,
-.contact-th-link:active {
-    color: #d75d34;
-}
-
-.contact-th-link:hover {
-    color: #d75d34;
-}
-
-.contacts-th-contacts .call-back-btn {
-    margin: 9px 0;
+.footer .row {
+    position: relative;
+    z-index: 2;
 }
 
 .socials-list {
@@ -3346,6 +3371,7 @@ footer {
     line-height: 24px;
     font-weight: normal;
     color: #92adc3;
+    padding: 0;
 }
 
 .maximus {

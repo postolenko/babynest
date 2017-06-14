@@ -459,11 +459,24 @@ $(document).ready(function() {
 
 
      function getContactCircleSize() {
-        $(".contacts-thumbnails.contacts-page .thumbnail .inner").each(function() {
 
-            $(this).outerWidth( $(this).outerHeight() );
+        if( bodyWidth > 480 ) {
 
-        });
+            $(".contacts-thumbnails.contacts-page .thumbnail .inner").each(function() {
+
+                $(this).outerWidth( $(this).outerHeight() );
+
+            });
+
+        } else {
+
+            $(".contacts-thumbnails.contacts-page .thumbnail .inner").css({
+                "width" : "auto",
+                "height" : "auto"
+            });
+
+        }
+
      }
 
      // ---------------

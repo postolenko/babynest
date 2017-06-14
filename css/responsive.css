@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1280px) {
+	
+	.row {
+		padding: 0 2%;
+	}
 
 	/*-- Header --*/
 
@@ -42,14 +46,19 @@
 
 	/*-- /Section 3 Good Page --*/
 
+	/*-- Section 1 Contacts Page --*/
+
+	.contacts-thumbnails.contacts-page .thumbnail.th-3 {
+	    margin-top: 35px;
+	    left: -5%;
+	}
+
+	/*-- /Section 1 Contacts Page --*/
+
 }
 
 
 @media only screen and (max-width: 1024px) {
-
-	.row {
-		padding: 0 2%;
-	}
 
 	/*-- Header --*/
 
@@ -98,14 +107,6 @@
 
 	/*-- Section 1 Good Page --*/
 
-	.card-block {
-
-	}
-
-	.card-block .inner {
-
-	}
-
 	.card-block .inner .col-2 {
 		float: none;
 		width: 100%;
@@ -146,7 +147,6 @@
 	.two-cols-item .col {
 	    display: table-cell;
 	    vertical-align: top;
-	    /*width: auto;*/
 	}
 
 	/*-- /Section 2 Good Page --*/
@@ -171,6 +171,37 @@
 	}
 
 	/*-- /Section 3 Good Page --*/
+
+	/*-- Section 1 Contacts Page --*/
+
+	.contacts-block {
+		margin: 0 0 30px 0;
+	}
+
+	.contacts-thumbnails.contacts-page .thumbnail.th-2 {
+	    margin-top: 376px;
+		position: relative;
+		left: -65px;
+	}
+
+	.contacts-thumbnails.contacts-page .thumbnail.th-3 {
+        margin-top: 55px;
+	    position: relative;
+	    left: -13%;
+	}
+
+	.thumbnails.contacts-page .thumbnail .inner {
+	    min-width: 280px;
+	    min-height: 280px;
+	}
+
+	.contacts_lines {
+	    width: 79%;
+	    top: 12%;
+	    left: 8%;
+	}
+
+	/*-- /Section 1 Contacts Page --*/
 
 }
 
@@ -302,6 +333,14 @@
 	}
 
 	/*-- .Section 1 Bsket Page --*/
+
+	/*-- Section 1 Contacts Page --*/
+
+	.contacts_lines {
+	    top: 14%;
+	}
+
+	/*-- /Section 1 Contacts Page --*/
 
 }
 
@@ -641,6 +680,37 @@
 
 	/*-- .Section 1 Bsket Page --*/
 
+	/*-- Section 1 Contacts Page --*/
+
+	.contacts-block {
+		margin: 0 0 10px 0;
+	}
+
+	.contacts-thumbnails.contacts-page .thumbnail {
+	    width: 100%;
+	    margin: 20px auto !important;
+	    left: 0 !important;
+	}
+
+	.contacts_lines {
+	    display: none;
+	}
+
+	.float-elem-16 {
+	    top: 39%;
+	    left: 12px;
+	}
+
+	.float-elem-13 {
+	    left: 2%;
+	}
+
+	.float-elem-14 {
+		display: none;
+	}
+
+	/*-- /Section 1 Contacts Page --*/
+
 	/*-- Popups --*/
 
 	.popup {
@@ -782,7 +852,11 @@
 	/*-- Footer --*/
 
 	.footer {
-	    padding: 0 0 5px 0;
+	    padding: 0 0 15px 0;
+	}
+
+	.footer:before {
+		display: none;
 	}
 
 	.footer .bottom-row .col-1,
@@ -796,7 +870,11 @@
 	}
 
 	.footer .bottom-row .col {
-	    padding: 0 0 5px 0;
+	    padding: 4px 0;
+	}
+
+	.footer .bottom-row p {
+	    padding: 5px;
 	}
 
 	/*-- /Footer --*/
