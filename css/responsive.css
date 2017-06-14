@@ -139,6 +139,14 @@
 
 	/*-- /Section 1 Good Page --*/
 
+	/*-- Section 3 Good Page --*/
+
+	section.video-sect {
+	    padding: 18px 0 0 0;
+	}
+
+	/*-- Section 3 Good Page --*/
+
 	/*-- Section 2 Good Page --*/
 
 	.two-cols-box .col-1,
@@ -152,6 +160,19 @@
 		position: relative;
 		bottom: initial;
 		right: initial;
+	}
+
+	.use-descripts li {
+	    margin: 25px 20px 10px 20px;
+	}
+
+	.use-descripts .tooltip {
+	    min-width: 160px;
+	    top: -41px;
+	}
+
+	.use-descripts li .tooltip.visibility {
+	    top: -37px;
 	}
 
 	.two-cols-item .col {
@@ -1165,19 +1186,6 @@
 	    height: 100px;
 	    margin: 6px auto;
 	    padding: 0;
-	}
-
-	.use-descripts li {
-	    margin: 20px 20px 10px 20px;
-	}
-
-	.use-descripts .tooltip {
-	    min-width: 160px;
-	    top: -23px;
-	}
-
-	.use-descripts li .tooltip.visibility {
-	    top: -37px;
 	}
 
 	/*-- /Section 2 Good Page --*/
