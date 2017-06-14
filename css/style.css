@@ -2993,12 +2993,14 @@ section.video-sect {
 }
 
 .radio-box label {
+    display: inline-block;
+    vertical-align: top;
     font-family: "ALSSchlangesans", Verdana, Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
     color: #ffffff;
-    padding: 6px 40px 0 40px;
+    padding: 6px 0 0 40px;
     position: relative;
 }
 
