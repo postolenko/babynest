@@ -2929,7 +2929,12 @@ section.video-sect {
 }
 
 .choise-count button[type="button"] .arrow-icon {
-    margin: 0 auto;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .plus .arrow-icon {
