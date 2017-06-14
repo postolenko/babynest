@@ -2881,6 +2881,7 @@ section.video-sect {
     width: 27px;
     height: 40px;
     cursor: pointer;
+    position: relative;
     background: transparent;
 }
 
@@ -2899,7 +2900,6 @@ section.video-sect {
     width: 31px;
     height: 40px;
     border: none;
-    position: relative;
     padding: 3px 4px 3px 2px;
     text-align: right;
     background: transparent;
