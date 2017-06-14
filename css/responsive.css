@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1280px) {
-	
+
 	.row {
 		padding: 0 2%;
 	}
@@ -47,6 +47,10 @@
 	/*-- /Section 3 Good Page --*/
 
 	/*-- Section 1 Contacts Page --*/
+
+	.bottom-shadow .row {
+	    padding-bottom: 27px;
+	}
 
 	.contacts-thumbnails.contacts-page .thumbnail.th-3 {
 	    margin-top: 35px;
@@ -142,6 +146,12 @@
 		display: block;
 		width: 100%;
 		padding: 0;
+	}
+
+	.use-descripts {
+		position: relative;
+		bottom: initial;
+		right: initial;
 	}
 
 	.two-cols-item .col {

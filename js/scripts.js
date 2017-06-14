@@ -425,12 +425,16 @@ $(document).ready(function() {
 
     function getBootomPaddingForUseDescripts() {
 
-        if( $(".two-cols-box > .col-2 .use-descripts").length > 0 ) {
+        if( $(".two-cols-box > .col-2 .use-descripts").length > 0 && bodyWidth >= 1024) {
 
             $(".two-cols-box > .col-2").css({
                 "padding-bottom" : $(".two-cols-box .col-2 .use-descripts").height() + "px"
             });
             
+        } else {
+            $(".two-cols-box > .col-2").css({
+                "padding-bottom" : 0 + "px"
+            });
         }
 
     }
