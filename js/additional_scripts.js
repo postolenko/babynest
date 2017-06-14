@@ -15,7 +15,7 @@ $(document).ready(function() {
 			$(".scroll-horisontal").mCustomScrollbar({
 
 				axis:"x"
-				
+
 			});
 
 		});

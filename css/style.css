@@ -497,6 +497,79 @@ select {
 
 }
 
+.slick-arrow {
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    z-index: 2;
+    opacity: .9;
+    text-align: center;
+    background: rgba(146, 173, 195, 1);
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+    font-size: 38px;
+    line-height: 39px;
+    font-weight: normal;
+    color: #ffffff;
+
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .5s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .5s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .5s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+
+}
+
+.slick-arrow:active,
+.slick-arrow:hover {
+    opacity: 1;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next:before {
+    content: "\276F";
+    position: relative;
+    top: 1px;
+    right: -1px;
+}
+
+.slick-prev:after {
+    content: "\276E";
+    position: relative;
+    top: 1px;
+    left: -1px;
+}
+
 /*-- /Slick Pagination --*/
 
 /*-------------------------------------------*/
