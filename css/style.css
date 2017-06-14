@@ -2931,9 +2931,8 @@ section.video-sect {
 
 .choise-count button[type="button"] .arrow-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -5px 0 0 -4px;
+    top: 16px;
+    left: 9px;
 }
 
 .plus .arrow-icon {
