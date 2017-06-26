@@ -40,7 +40,7 @@ $(document).ready(function() {
         }
 	  });
 
-	$(".feedback_slider_1").not('.slick-initialized').slick({
+	 $(".feedback_slider_1").not('.slick-initialized').slick({
 		dots: true,
 		arrows: false,
 		speed: 800,
@@ -50,14 +50,14 @@ $(document).ready(function() {
 		autoplaySpeed: 7000,
 		 responsive: [
 		    {
-		      breakpoint: 1200,
+		      breakpoint: 630,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 2
 		      }
 		    },
 		    {
-		      breakpoint: 480,
+		      breakpoint: 440,
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1
@@ -73,7 +73,7 @@ $(document).ready(function() {
 		// nodes;
 
 		noUiSlider.create(ageRange, {
-			start: [0, 6],
+			start: [1, 5],
 			connect: true,
 			behaviour: 'tap',
 			step: 1,
@@ -101,10 +101,6 @@ $(document).ready(function() {
 
 				$("#upper-value").text(maxAge);
 
-			}
-
-			if($("#filter").length) {
-				$("#filter").trigger('change');
 			}
 
 		});
@@ -180,14 +176,14 @@ $(document).ready(function() {
 		autoplaySpeed: 7000,
 		 responsive: [
 		    {
-		      breakpoint: 1200,
+		      breakpoint: 630,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 2
 		      }
 		    },
 		    {
-		      breakpoint: 480,
+		      breakpoint: 440,
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1
