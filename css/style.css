@@ -851,6 +851,77 @@ select {
     background-position: center;
 }
 
+.bascket_small-icon {
+    display: block;
+    width: 28px;
+    height: 25px;
+    position: relative;
+}
+
+.bascket_small-icon:before,
+.bascket_small-icon:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.bascket_small-icon:before {
+    opacity: 1;
+    background-image: url(../img/shopping_cart_small.png);
+}
+
+.bascket_small-icon:after {
+    opacity: 0;
+    background-image: url(../img/shopping_cart_small_hover.png);
+}
+
+.white-pill .bascket_small-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.white-pill:active .bascket_small-icon:before {
+    opacity: 0;
+}
+
+.white-pill:active .bascket_small-icon:after {
+    opacity: 1;
+}
+
+.white-pill:hover .bascket_small-icon:before {
+    opacity: 0;
+}
+
+.white-pill:hover .bascket_small-icon:after {
+    opacity: 1;
+}
 
 /* ----- Responsive Menu Button ------ */
 
@@ -1523,7 +1594,7 @@ select {
     display: inline-block;
     vertical-align: top;
     width: auto;
-    max-width: 380px;
+    /*max-width: 380px;*/
     margin: 30px 5px;
 }
 
@@ -2130,6 +2201,8 @@ p.price {
 
 .card-block .col-1 {
     width: 42%;
+    position: relative;
+    z-index: 2;
     padding: 26px 0 0 37px;
 }
 

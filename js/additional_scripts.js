@@ -45,7 +45,7 @@ $(document).ready(function() {
 		arrows: false,
 		speed: 800,
 		slidesToShow: 3,
-		slidesToScroll: 2,
+		slidesToScroll: 3,
 		autoplay: true,
 		autoplaySpeed: 7000,
 		 responsive: [
@@ -53,7 +53,7 @@ $(document).ready(function() {
 		      breakpoint: 1200,
 		      settings: {
 		        slidesToShow: 2,
-		        slidesToScroll: 1
+		        slidesToScroll: 2
 		      }
 		    },
 		    {
@@ -171,7 +171,7 @@ $(document).ready(function() {
 		arrows: false,
 		speed: 800,
 		slidesToShow: 3,
-		slidesToScroll: 2,
+		slidesToScroll: 3,
 		autoplay: true,
 		autoplaySpeed: 7000,
 		 responsive: [
@@ -179,7 +179,7 @@ $(document).ready(function() {
 		      breakpoint: 1200,
 		      settings: {
 		        slidesToShow: 2,
-		        slidesToScroll: 1
+		        slidesToScroll: 2
 		      }
 		    },
 		    {
